@@ -1,0 +1,94 @@
+/* ---------------- Nav bar styles ---------------- */
+nav{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    margin-right: 20px;
+}
+
+header {
+    padding: 15px;
+    border-bottom: 2px solid #e7e7e7;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.nav-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+.nav-links a {
+    color: black;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    background-color: #147bbe;
+    border-radius: 25px;
+}
+
+#selected {
+    color: white;
+    background-color: #147bbe;
+    border-radius: 25px;
+    pointer-events: none;
+    cursor: default;
+}
+
+/* ---------------- footer styles ---------------- */
+
+footer {
+    margin: 0px;
+    text-align: center;
+    background-color: #147bbe;
+    color: white;
+    padding: 20px;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    padding-top: 20px;
+}
+
+.footer-contacts {
+    padding: 10px;
+    text-align: left;
+}
+
+.links {
+    padding-top: 50px;
+}
+
+.links ul {
+    text-align: left;
+    list-style-type: none;
+    padding: 0px;
+}
+
+/* ---------------- body styles ---------------- */
+@font-face {
+  font-family: myFont; /* set name */
+  src: url(../font/Coolvetica\ Rg.otf);
+}
+
+*{
+    font-family: myFont;
+}
+body {
+    margin: 0px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
