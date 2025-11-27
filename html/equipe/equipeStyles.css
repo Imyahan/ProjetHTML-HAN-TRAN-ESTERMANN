@@ -1,0 +1,79 @@
+/* ---------------- Accueil ---------------- */
+.part1 {
+    text-align: center;
+}
+
+.title {
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.nos_equipes {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    padding: 50px;
+}
+
+.Nos_equipes a {
+    color: black;
+}
+
+#dedicaceAMeunier {
+    /* background-image: url("../../img/frederic_meunier-efrei.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px; */
+
+    background-color: #4c4744;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    text-align: center;
+}
+
+#dedicaceAMeunier .description {
+    font-size: 30px;
+    border: 1px solid black;
+    margin: 40px;
+    padding: 40px;
+    border-radius: 25px;
+    background-color: rgb(172, 172, 172);
+}
+
+#imageEquipe {
+    background-image: url(../../img/frederic_meunier-efrei.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#quiSuitJe {
+    padding: 20px;
+}
+
+#profilDescription {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 20px;
+    color: black;
+    align-self: center;
+
+    padding: 15px;
+}
+
+#profilDescription img {
+    width: 100%;
+}
+
+.split-columns {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    padding: 15px;
+}
+
+.split-rows {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    padding: 15px;
+}
