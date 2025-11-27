@@ -1,0 +1,36 @@
+{
+  "semaine": "38-39",
+  "jours": [
+    {
+      "date": "19 mars",
+      "cours": [
+        {
+          "heureDebut": "08:00",
+          "heureFin": "09:10",
+          "nom": "Conception",
+          "prof": "Didier Meier",
+          "salle": "A304"
+        },
+        {
+          "heureDebut": "10:00",
+          "heureFin": "11:10",
+          "nom": "Conception",
+          "prof": "Didier Meier",
+          "salle": "A304"
+        }
+      ]
+    },
+    {
+      "date": "20 mars",
+      "cours": [
+        {
+          "heureDebut": "14:00",
+          "heureFin": "15:10",
+          "nom": "Conception",
+          "prof": "Didier Meier",
+          "salle": "A304"
+        }
+      ]
+    }
+  ]
+}
