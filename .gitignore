@@ -1,0 +1,31 @@
+# =======================
+#   IntelliJ / JetBrains
+# =======================
+
+.idea/
+*.iml
+out/
+cmake-build-*/
+*.ipr
+*.iws
+# =======================
+# Windows
+Thumbs.db
+Desktop.ini
+
+# =======================
+#   Logs
+# =======================
+
+*.log
+
+# =======================
+#   IDE divers
+# =======================
+
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

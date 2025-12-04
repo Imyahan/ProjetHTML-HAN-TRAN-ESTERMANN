@@ -31,6 +31,7 @@ header {
 }
 
 .nav-links a:hover {
+    color: white;
     background-color: #147bbe;
     border-radius: 25px;
 }
@@ -51,6 +52,10 @@ footer {
     background-color: #147bbe;
     color: white;
     padding: 20px;
+}
+
+footer a {
+    color: white;
 }
 
 .footer-links {
@@ -75,7 +80,7 @@ footer {
     padding: 0px;
 }
 
-/* ---------------- body styles ---------------- */
+/* ---------------- body styles Universal ---------------- */
 @font-face {
   font-family: myFont; /* set name */
   src: url(../font/Coolvetica\ Rg.otf);
@@ -89,6 +94,5 @@ body {
 }
 
 a {
-    color: white;
     text-decoration: none;
 }
