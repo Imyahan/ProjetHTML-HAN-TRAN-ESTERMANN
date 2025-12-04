@@ -53,6 +53,10 @@ footer {
     padding: 20px;
 }
 
+footer a {
+    color: white;
+}
+
 .footer-links {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -75,7 +79,7 @@ footer {
     padding: 0px;
 }
 
-/* ---------------- body styles ---------------- */
+/* ---------------- body styles Universal ---------------- */
 @font-face {
   font-family: myFont; /* set name */
   src: url(../font/Coolvetica\ Rg.otf);
@@ -89,6 +93,5 @@ body {
 }
 
 a {
-    color: white;
     text-decoration: none;
 }
