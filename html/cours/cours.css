@@ -1,7 +1,7 @@
 #edt-wrapper {
     width: 100%;
     margin-top: 10px;
-    margin-bottom: 10px ;
+    margin-bottom: 10px;
 }
 
 /* Header des jours */
@@ -53,25 +53,25 @@
     color: black;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     font-size: 13px;
 }
 
 
 #edt-topbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    padding: 15px 5px;
-    margin-bottom: 10px;
+    padding: 15px;
     background: #147bbe;
     border-radius: 12px;
-    color: white;
+    margin-bottom: 20px;
 }
+
 
 #edt-controls {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     gap: 10px;
 }
 
@@ -88,9 +88,26 @@
     padding: 6px 10px;
     border-radius: 5px;
 }
-#edt-semaine-titre{
+
+#edt-semaine-titre {
     text-align: center;
-    font-weight: bold;
-    color: black;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 28px;
 }
+
+/* Mode jour : la date centrée */
+.mode-jour #edt-jours-header {
+    display: flex !important;
+    justify-content: center !important;
+    grid-template-columns: none !important;
+}
+
+/* Réduction globale de la section EDT */
+section {
+    transform-origin: top center;
+    width: 100%;
+}
+
+
 
