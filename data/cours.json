@@ -1,5 +1,5 @@
 {
-  "semaine": "40",
+  "semaine": "39-40",
   "jours": [
     {
       "date": "21 mars",
@@ -146,6 +146,72 @@
         {
           "heureDebut": "17:30",
           "heureFin": "19:00",
+          "nom": "Mathématiques discrètes",
+          "prof": "Claire Bernard",
+          "salle": "C003"
+        }
+      ]
+    },
+    {
+      "date": "26 mars",
+      "cours": [
+        {
+          "heureDebut": "08:00",
+          "heureFin": "09:10",
+          "nom": "Conception",
+          "prof": "Didier Meier",
+          "salle": "A304"
+        },
+        {
+          "heureDebut": "10:00",
+          "heureFin": "11:10",
+          "nom": "Programmation Orientée Objet",
+          "prof": "Marie Dupont",
+          "salle": "B102"
+        },
+        {
+          "heureDebut": "13:30",
+          "heureFin": "15:00",
+          "nom": "Bases de données",
+          "prof": "Luc Morel",
+          "salle": "A210"
+        },
+        {
+          "heureDebut": "17:00",
+          "heureFin": "18:30",
+          "nom": "Mathématiques discrètes",
+          "prof": "Claire Bernard",
+          "salle": "C003"
+        }
+      ]
+    },
+    {
+      "date": "27 mars",
+      "cours": [
+        {
+          "heureDebut": "08:00",
+          "heureFin": "09:10",
+          "nom": "Conception",
+          "prof": "Didier Meier",
+          "salle": "A304"
+        },
+        {
+          "heureDebut": "10:00",
+          "heureFin": "11:10",
+          "nom": "Programmation Orientée Objet",
+          "prof": "Marie Dupont",
+          "salle": "B102"
+        },
+        {
+          "heureDebut": "13:30",
+          "heureFin": "15:00",
+          "nom": "Bases de données",
+          "prof": "Luc Morel",
+          "salle": "A210"
+        },
+        {
+          "heureDebut": "17:00",
+          "heureFin": "18:30",
           "nom": "Mathématiques discrètes",
           "prof": "Claire Bernard",
           "salle": "C003"

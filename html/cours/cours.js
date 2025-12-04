@@ -54,3 +54,45 @@ function genererEDT(data) {
         });
     });
 }
+
+let semaineActuelle = 40;
+let dataCache = null;
+
+function chargerSemaine(num){
+    fetch("../../data/cours.json")
+        .then(r => r.json())
+        .then(data => {
+            dataCache = data;
+            document.getElementById("edt-semaine-titre").textContent =
+                "Semaine " + data.semaine;
+
+            genererEDT(data);
+        });
+}
+
+chargerSemaine(semaineActuelle);
+document.getElementById("prev-week").addEventListener("click", () => {
+    semaineActuelle--;
+    chargerSemaine(semaineActuelle);
+});
+
+document.getElementById("next-week").addEventListener("click", () => {
+    semaineActuelle++;
+    chargerSemaine(semaineActuelle);
+});
+
+document.getElementById("view-select").addEventListener("change", (e) => {
+    const mode = e.target.value;
+
+    if(mode === "week"){
+        document.getElementById("edt-jours-header").style.display = "grid";
+        document.getElementById("edt-container").style.gridTemplateColumns = "50px repeat(7, 1fr)";
+    } else {
+        document.getElementById("edt-jours-header").style.display = "none";
+        document.getElementById("edt-container").style.gridTemplateColumns = "50px 1fr";
+    }
+
+    genererEDT(dataCache);
+});
+
+

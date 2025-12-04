@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" type="text/css" href="../accueil/accueilStyles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./cours.js"></script>
     <link rel="stylesheet" href="cours.css">
 
 </head>
@@ -22,6 +21,19 @@
     </nav>
 </header>
 <body>
+    <h2 id="edt-semaine-titre">Semaine</h2>
+
+<div id="edt-topbar">
+
+    <div id="edt-controls">
+        <button id="prev-week">⬅</button>
+        <select id="view-select">
+            <option value="week">Vue semaine</option>
+            <option value="day">Vue jour</option>
+        </select>
+        <button id="next-week">➡</button>
+    </div>
+</div>
 
 <div id="edt-wrapper">
 
@@ -69,5 +81,6 @@
     </section>
     <p>&copy; © 2025 Efrei – Tous droits réservés.</p>
 </footer>
+<script src="./cours.js"></script>
 </body>
 </html>

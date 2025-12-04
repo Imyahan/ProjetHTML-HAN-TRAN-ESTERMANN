@@ -56,3 +56,41 @@
     box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
     font-size: 13px;
 }
+
+
+#edt-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5px;
+    margin-bottom: 10px;
+    background: #147bbe;
+    border-radius: 12px;
+    color: white;
+}
+
+#edt-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#edt-controls button {
+    background: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#view-select {
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+#edt-semaine-titre{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+
