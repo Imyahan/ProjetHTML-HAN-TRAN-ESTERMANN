@@ -1,12 +1,12 @@
 let allDedicaces = [];
 let filteredDedicaces = [];
+let currentEquipe = "intelligenceArtificielle";
 let index = 0;
-let currentEquipe = "relationEntreprise";
 let autoScrollTimer = null;
 
 document.addEventListener("DOMContentLoaded", () => {
     
-    fetch("equipe.json")
+    fetch("équipe.json")
         .then(res => res.json())
         .then(data => {
             allDedicaces = data;
@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
     function filterEquipe(equipe) {
         currentEquipe = equipe;
         filteredDedicaces = allDedicaces.filter(d => d.equipe === equipe);
-        index = 0; 
         highlightEquipe();
     }
 
@@ -29,10 +28,11 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("citation").textContent = `"${d.citation}"`;
         document.getElementById("nom").textContent = d.nom;
         document.getElementById("role").textContent = d.role;
-        
-        document.getElementById("descriptionPrincipal").textContent = d.profil;
-        document.getElementById("descriptionDiplomes").textContent = d.diplomes;
-        document.getElementById("descriptionCours").textContent = d.coursProjets;
+
+        const descGauche = document.getElementById("descriptionGauche");
+        const descDroite = document.getElementById("descriptionDroite");
+        descGauche.textContent = d.role_description || "";
+        descDroite.textContent = d.mission || "";
 
         const imgDiv = document.getElementById("imageEquipe");
         const imagePath = `../../img/equipe/${d.nom}.jpg`;
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function DescriptionSize() {
         const citation = document.getElementById("citation");
-        const description = document.querySelector(".description");
+        const description = document.getElementById("légende");
         let fontSize = 20; 
         citation.style.fontSize = fontSize + "px";
         const maxHeight = description.clientHeight 
@@ -62,8 +62,8 @@ document.addEventListener("DOMContentLoaded", () => {
     function highlightEquipe() {
         document.querySelectorAll(".Nos_equipes .equipe").forEach(div => {
             const img = div.querySelector("img");
-            const equipeId = img.alt;
-            if (equipeId === currentEquipe) {
+            const département= img.alt;
+            if (département === currentEquipe) {
                 div.classList.add("selected");
             } else {
                 div.classList.remove("selected"); 
@@ -102,8 +102,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelectorAll(".Nos_equipes .equipe").forEach(equipeDiv => {
         equipeDiv.addEventListener("click", () => {
-            const equipeId = equipeDiv.querySelector("img").alt;
-            filterEquipe(equipeId);
+            const département = equipeDiv.querySelector("img").alt;
+            filterEquipe(département);
             updateDedicace(); 
             startAutoScroll();
         });

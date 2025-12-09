@@ -1,0 +1,50 @@
+h1, h2, h3 { 
+    margin:0 0 16px; 
+}
+
+section { 
+    padding:48px 32px; 
+}
+        
+.center { 
+    text-align:center;
+ }
+
+ 
+#Détails {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 20px;
+    color: black;
+    align-self: center;
+    padding: 15px;
+    background-color: #e7f6f4; 
+}
+        
+.expertise { 
+    background:#e7f6f4; 
+    border-radius:16px; 
+    padding:32px; 
+    margin-top:40px; 
+    display:grid; 
+    grid-template-columns:1fr 1fr; 
+    gap:32px; 
+}
+        
+
+#projetsEtudiants{
+    background-color: #e7f6f4;
+}
+
+.projects, .majeures { 
+    display:grid; 
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); 
+    gap:24px; 
+}
+        
+.card { 
+    background:#fff; 
+    border-radius:16px; 
+    padding:16px; 
+    box-shadow:0 4px 10px rgba(0,0,0,.06); 
+}

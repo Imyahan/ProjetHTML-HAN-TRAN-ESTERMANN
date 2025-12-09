@@ -1,47 +1,112 @@
-/* ---------------- Accueil ---------------- */
-.part1 {
+.center{
     text-align: center;
 }
 
-.title {
-    padding: 10px;
-    margin: 10px;
-    border-bottom: 1px solid gray;
+.separator {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    width: 80%;
 }
+
+.titreClassique{
+    padding-left : 40px;
+    color: #147bbe;
+}
+
+#biographie, #descriptionDomaine{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 20px;
+    color: black;
+    align-self: center;
+    padding: 15px;
+}
+
+#biographie p, #descriptionDomaine p{
+    padding-left: 25px;
+    padding-right: 25px;
+    line-height: 1.8; 
+}
+
+/* ---------------- Sélection de l'équipe ---------------- */
 
 .Nos_equipes {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
-    margin-bottom: 25px;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+.Nos_equipes img{
+    width: 150px;
+    height: auto;
 }
 
 .Nos_equipes div{
+    padding: 40px;
     font-size: large;
-    margin-bottom: 10px;
     transition: transform 0.25s ease-out;
-}
-
-.Nos_equipes .equipe.selected {
-    font-weight: bold;
 }
 
 .Nos_equipes div:hover{
     transform: scale(1.25);
 }
 
+.Nos_equipes .equipe.selected {
+    font-weight: bold;
+}
+
+/* ---------------- Domaine d'expertise ---------------- */
+
+#domaine{
+    position: relative;
+    overflow: hidden;
+}
+
+#titreDomaine{
+    display: inline-block;
+    border-radius: 50px;
+    padding: 10px;
+    margin-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    color:white;
+    background-color: #147bbe;
+}
+
+#descriptionDomaine{
+    height: 450px;
+}
+
+#logoDomaine {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background-image: url("../../img/départements/iaLogo.png"); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.1;       
+    pointer-events: none;  
+    z-index: 0;       
+}
+
+/* ---------------- Membres de l'équipe ---------------- */
+
 #dedicace { 
-    background-color: #4c4744;
+    height: 400px;
     text-align: center;
     display: grid;
     grid-template-columns: 10% 40% 40% 10%;
     text-align: center;
     background-image: url("../../img/background_dedicace.jpg");
     background-size: cover;
-    image-rendering: auto;
 }
 
-#dedicace .description {
+#dedicace #légende {
     width: 500px;
     height: 300px;
     padding: 40px;
@@ -60,7 +125,7 @@
 }
 
 button{
-    margin-top:  225px;
+    margin-top:  175px;
     margin-left: 50px;
     height: 50px;
     width: 50px;
@@ -73,31 +138,37 @@ button:hover{
     background-color: rgb(255, 255, 255);
 }
 
-#quiSuissJe {
-    padding: 20px;
+/* ---------------- Qui sommes-nous ? ---------------- */
+
+#titreQui{
+    padding-top: 40px;
 }
 
-#profilDescription {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    font-size: 20px;
-    color: black;
-    align-self: center;
-    padding: 15px;
+#biographie {
+    height:250px;
 }
 
-#profilDescription img {
-    width: 100%;
+/* ---------------- Projets ---------------- */
+
+#projetsDépartement{
+    background-color: #147bbe;
 }
 
-.split-columns {
-    display: grid;
-    grid-template-columns: 10% 90%;
-    padding: 15px;
+#titreProjets{
+    color:white;
+    padding-top:50px;
 }
 
-.split-rows {
-    display: grid;
-    grid-template-rows: 50% 50%;
-    padding: 15px;
+.projets{
+    padding:30px; 
+    display:grid; 
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); 
+    gap:24px; 
+}
+      
+.card { 
+    background-color: white;
+    border-radius:16px; 
+    padding:16px; 
+    box-shadow:0 4px 10px rgba(0,0,0,.06); 
 }

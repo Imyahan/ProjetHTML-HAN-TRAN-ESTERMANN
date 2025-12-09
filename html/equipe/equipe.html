@@ -14,51 +14,77 @@
             <a href="index.html"><img src="../../img/logo1.png" alt="logo1" class="logo"></a>
             <div class="nav-links">
                 <a href="../accueil/accueil.html">Accueil</a>
-                <a href="../cours/cours.html">Cours</a>
-                <a id="selected_page" href="equipe.html">Equipe</a>
+                <a href="../formation/formation.html">Formations</a>
+                <a id="selected_page" href="../equipe/equipe.html">Equipe</a>
             </div>
         </nav>
     </header>
     <main>
-        <section class="part1">
-            <h1 class="titre">Nos équipes</h1>
+        <section class="départements">
+            <div class="center"><h1 class="titreClassique">Nos départements</h1></div>
             <div class="Nos_equipes">
-                <div class="equipe"><img src="../../img/relationEntreprises.png" alt="relationEntreprise"><br/>Relation Entreprise</div>
-                <div class="equipe"><img src="../../img/ServiceInformatique.png" alt="serviceInformatique"><br/>Service Informatique</div>
-                <div class="equipe"><img src="../../img/EfreiForGood.png" alt="efreiForGood"><br/>Efrei For Good</div>
-                <div class="equipe"><img src="../../img/innovationLab.png" alt="innovationLab"><br/>Innovation Lab</div>
-                <div class="equipe"><img src="../../img/relationInternationals.png" alt="relationsInternationales"><br/>Relations Internationales</div>
-                <div class="equipe"><img src="../../img/examens.png" alt="examen"><br/>Examens</div>
+                <div class="equipe">
+                    <img src="../../img/départements/ia.png" alt="intelligenceArtificielle">
+                    <p>Intelligence Artificielle</p>
+                </div>
+                <div class="equipe">
+                    <img src="../../img/départements/cloudComputing.png" alt="cloudComputing">
+                    <p>Cloud Computing</p>
+                </div>
+                <div class="equipe">
+                    <img src="../../img/départements/cyber.png" alt="cyberdéfense">
+                    <p>Cyberdéfense</p>
+                </div>
+                <div class="equipe">
+                    <img src="../../img/départements/data.png" alt="bigData">
+                    <p>Big Data</p>
+                </div>
+            </div>
+        </section>
+        <hr class="separator">
+        <section>
+            <div id="domaine">
+                <div id="logoDomaine"></div>
+                <div class="center"><h1 id="titreDomaine">Domaine d'expertise</h1></div>
+                <div id="descriptionDomaine">
+                    <div>
+                        <p class="descriptionGauche"></p>
+                        <p class="descriptionGauche"></p>
+                    </div>
+                    <div>
+                        <p class="descriptionDroite"></p>
+                        <p class="descriptionDroite"></p>
+                    </div>
+                </div>
             </div>
             <div id="dedicace">
                 <button id="prevButton">&lt;</button>
                 <div id="imageEquipe"></div>
-                <div class="description">
+                <div id="légende">
                     <p id="citation"></p>
                     <h1 id="nom"></h1>
                     <h3 id="role"></h3>
                 </div>
                 <button id="nextButton">></button>
             </div>
-        </section>
-        <section>
-            <div id="quiSuisJe">
-                <h1 class="titre">Qui suis-je ?</h1>
-                <div id="profilDescription">
+            <div id="quiSommesNous">
+                <h1 class="titreClassique" id="titreQui">Qui sommes-nous ?</h1>
+                <div id="biographie">
                     <div>
-                        <p id="descriptionPrincipal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p id="descriptionGauche"></p>
                     </div>
-                    <div class="split-rows">
-                        <div class="split-columns">
-                            <img src="../../img/edu.png" alt="">
-                            <p id="descriptionDiplomes" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                        <div class="split-columns">
-                            <img src="../../img/edu2.png" alt="">
-                            <p id="descriptionCours">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
+                    <div>
+                        <p id="descriptionDroite">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section id="projetsDépartement">
+            <div class="center"><h1 id="titreProjets">Projets de fin d'études & stages</h1></div>
+            <div class="projets">
+                <div class="card">Projet 1</div>
+                <div class="card">Projet 2</div>
+                <div class="card">Projet 3</div>
             </div>
         </section>
     </main>
@@ -96,5 +122,6 @@
         <p>© 2025 Efrei – Tous droits réservés.</p>
     </footer>
     <script src="../equipe/equipe.js"></script>
+    <script src="../equipe/département.js"></script>
 </body>
 </html>
