@@ -57,6 +57,10 @@ footer a {
     color: white;
 }
 
+footer a:hover {
+    color: black;
+}
+
 .footer-links {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
