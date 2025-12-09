@@ -1,4 +1,4 @@
-let semaineActuelle = 0;   // INDEX dans data.semaines
+let semaineActuelle = 0;
 let jourActuel = 0;
 let modeActuel = "week";
 let dataCache = null;
@@ -10,7 +10,6 @@ function chargerSemaine(index){
         .then(r => r.json())
         .then(data => {
 
-            // Charge toutes les semaines
             dataCache = data.semaines;
 
             // Sécurise l’index
@@ -21,11 +20,9 @@ function chargerSemaine(index){
 
             const semaineData = dataCache[semaineActuelle];
 
-            // Affiche le titre : Semaine 39-40
             document.getElementById("edt-semaine-titre").textContent =
                 "Semaine " + semaineData.num;
 
-            // Affiche la vue
             if(modeActuel === "week"){
                 genererEDT(semaineData);
             } else {
@@ -43,7 +40,7 @@ function obtenirCreneau(heureDebut){
     let hour = parseInt(hStr, 10);
 
     if(hour % 2 !== 0){
-        hour++; // arrondi vers 14h, 16h, 18h...
+        hour++;
     }
 
     const hFormatee = hour.toString().padStart(2, "0");
@@ -109,7 +106,6 @@ function genererEDT(semaineData) {
     // Cours
     semaineData.jours.forEach((jour, dayIndex) => {
         jour.cours.forEach(c => {
-
             const row = obtenirCreneau(c.heureDebut);
 
             const bloc = document.createElement("div");

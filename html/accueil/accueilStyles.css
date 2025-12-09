@@ -51,13 +51,14 @@
     border: 2px solid black;
     border-radius: 25px;
     text-align: center;
-    overflow-y: scroll; /* Vertical scroll */
+    overflow-y: scroll;
 }
 
 .les_cours {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
     padding: 20px;
 }
 
@@ -111,10 +112,40 @@
     padding: 10px 20px;
 }
 
-.part3_img {
-    background-image: url("../../img/img1.jpg");
-    background-position: center;
-    background-size: cover;
-    border-radius: 5px 25px 25px 5px;
-    height: 100%;
+
+/*Partie sur les cours */
+/* Bloc d'un cours */
+.coursItem {
+    text-align: left;
+    margin: 10px 0;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+/* Titres + valeurs */
+.label {
+    font-weight: bold;
+    color: #147bbe;
+}
+
+.value {
+    color: black;
+}
+
+.salle {
+    color: red;
+}
+
+.groupe {
+    color: #F88F52 ;
+}
+
+.prof {
+    color: #4A919E  ;
+}
+
+.heureMini {
+    margin-top: 4px;
+    font-weight: bold;
+    color: #1C5588;
 }
