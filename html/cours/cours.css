@@ -102,7 +102,7 @@
     font-size: 28px;
 }
 
-/* Mode jour : la date centrée */
+/* Mode jour */
 .mode-jour #edt-jours-header {
     display: flex !important;
     justify-content: center !important;
@@ -121,6 +121,7 @@ section {
         --day-width: 140px;
     }
 
+    /* HEADER DES JOURS */
     #edt-jours-header::-webkit-scrollbar {
         display: none;
     }
@@ -141,7 +142,6 @@ section {
         scrollbar-width: none;
     }
 
-    /* Colonne vide = largeur de la colonne heures */
     #edt-jours-header::before {
         content: "";
         display: inline-block;
@@ -163,7 +163,7 @@ section {
         padding: 0 !important;
         margin: 0 !important;
         gap: 0 !important;
-        grid-template-columns:50px repeat(7, var(--day-width)) !important;
+        grid-template-columns: 50px repeat(7, var(--day-width)) !important;
         box-sizing: content-box;
     }
 
@@ -180,7 +180,38 @@ section {
         border-radius: 10px;
         padding: 4px;
     }
+
+    .mode-jour #edt-container {
+        grid-template-columns: 50px 1fr !important;
+        padding: 12px !important;
+    }
+
+    .mode-jour #edt-jours {
+        grid-column: 2;
+    }
+
+    .mode-jour .cours {
+        width: calc(100% - 12px);
+        margin: 10px auto;
+        padding: 12px;
+        text-align: center;
+        border-left: 6px solid rgba(0, 0, 0, 0.15);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    }
+
+    .mode-jour .cours strong {
+        display: block;
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+
+    .mode-jour .heure {
+        padding-top: 8px;
+        font-size: 13px;
+        font-weight: 600;
+    }
 }
+
 
 
 

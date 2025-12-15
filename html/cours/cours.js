@@ -120,10 +120,10 @@ function genererEDT(semaineData) {
         "50px repeat(7, 1fr)";
 
     edtHeader.style.display = "grid";
+    limiterScrollSemaineMobile(semaineData);
 }
 
 /* ------------------ VUE JOUR ------------------ */
-
 function genererJour(semaineData, indexJour){
 
     document.body.classList.add("mode-jour");
@@ -221,6 +221,34 @@ document.getElementById("next-week").addEventListener("click", () => {
         genererJour(dataCache[semaineActuelle], jourActuel);
     }
 });
+function limiterScrollSemaineMobile(semaineData) {
+    if (window.innerWidth > 600) return;
+    if (modeActuel !== "week") return;
+
+    const container = document.getElementById("edt-container");
+    const header = document.getElementById("edt-jours-header");
+
+    const nbJours = semaineData.jours.length; // normalement 5
+    const dayWidth = 140; // même valeur que --day-width
+    const colonneHeures = 50;
+
+    const largeurMax =
+        colonneHeures + nbJours * dayWidth - container.clientWidth;
+
+    const maxScroll = Math.max(0, largeurMax);
+
+    container.addEventListener("scroll", () => {
+        if (container.scrollLeft > maxScroll) {
+            container.scrollLeft = maxScroll;
+        }
+    });
+
+    header.addEventListener("scroll", () => {
+        if (header.scrollLeft > maxScroll) {
+            header.scrollLeft = maxScroll;
+        }
+    });
+}
 
 /* ---------------- Chargement ---------------- */
 chargerSemaine(semaineActuelle);
