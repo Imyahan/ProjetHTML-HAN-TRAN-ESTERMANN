@@ -4,20 +4,15 @@ let modeActuel = "week";
 let dataCache = null;
 
 /* ------------------ CHARGEMENT ------------------ */
-
 function chargerSemaine(index){
     fetch("../../data/cours.json")
         .then(r => r.json())
         .then(data => {
 
             dataCache = data.semaines;
-
-            // Sécurise l’index
             if (index < 0) index = 0;
             if (index >= dataCache.length) index = dataCache.length - 1;
-
             semaineActuelle = index;
-
             const semaineData = dataCache[semaineActuelle];
 
             document.getElementById("edt-semaine-titre").textContent =
@@ -32,10 +27,8 @@ function chargerSemaine(index){
 }
 
 /* ------------------ OUTIL : calcul du créneau ------------------ */
-
 function obtenirCreneau(heureDebut){
     const creneaux = ["08","10","12","14","16","18"];
-
     let [hStr] = heureDebut.split(":");
     let hour = parseInt(hStr, 10);
 
@@ -72,7 +65,6 @@ function syncScroll() {
 syncScroll();
 
 /* ----------------- VUE SEMAINE ------------------ */
-
 function genererEDT(semaineData) {
 
     document.body.classList.remove("mode-jour");
@@ -107,11 +99,9 @@ function genererEDT(semaineData) {
     semaineData.jours.forEach((jour, dayIndex) => {
         jour.cours.forEach(c => {
             const row = obtenirCreneau(c.heureDebut);
-
             const bloc = document.createElement("div");
             bloc.classList.add("cours");
             bloc.style.background = semaineData.jours[dayIndex].color;
-
 
             bloc.innerHTML = `
                 <strong>${c.nom}</strong><br>
@@ -119,7 +109,6 @@ function genererEDT(semaineData) {
                 Salle ${c.salle}<br>
                 ${c.heureDebut} - ${c.heureFin}
             `;
-
             bloc.style.gridColumn = dayIndex + 2;
             bloc.style.gridRow = row;
 
@@ -127,7 +116,6 @@ function genererEDT(semaineData) {
         });
     });
 
-    // grille 7 colonnes
     document.getElementById("edt-container").style.gridTemplateColumns =
         "50px repeat(7, 1fr)";
 
@@ -195,7 +183,6 @@ function genererJour(semaineData, indexJour){
 }
 
 /* ------------ CHANGEMENT DE VUE ------------------ */
-
 document.getElementById("view-select").addEventListener("change", (e) => {
     modeActuel = e.target.value;
 
@@ -208,8 +195,7 @@ document.getElementById("view-select").addEventListener("change", (e) => {
     }
 });
 
-/* ------------ FLÈCHES ------------------ */
-
+/* ------------ FLÈCHES pour passer de semaine ------------------ */
 document.getElementById("prev-week").addEventListener("click", () => {
     if(modeActuel === "week"){
         chargerSemaine(semaineActuelle - 1);
@@ -236,6 +222,5 @@ document.getElementById("next-week").addEventListener("click", () => {
     }
 });
 
-/* ---------------- START ---------------- */
-
+/* ---------------- Chargement ---------------- */
 chargerSemaine(semaineActuelle);

@@ -1,43 +1,182 @@
+<!DOCTYPE html>
 <html lang="FR">
 <head>
-    <title>EFREI - Accueil</title>
+    <title>EFREI - À propos</title>
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="../../img/favicon.png">
     <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" type="text/css" href="../accueil/accueilStyles.css">
+    <link rel="stylesheet" href="./a_propos.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
 <header>
     <nav>
         <a href="../accueil/accueil.html"><img src="../../img/logo1.png" alt="logo1" class="logo"></a>
         <div class="nav-links">
-            <a id="selected" href="../accueil/accueil.html">Accueil</a>
+            <a href="../accueil/accueil.html">Accueil</a>
             <a href="../cours/cours.html">Cours</a>
             <a href="../equipe/equipe.html">Equipe</a>
         </div>
     </nav>
 </header>
-<main>
-    <section>
-        <H1>À propos</H1>
+
+<main class="apropos">
+    <section class="apropos-hero">
+        <h1>À propos</h1>
     </section>
 
+    <!-- EQUIPE -->
+    <section class="section-apropos">
+        <h2 class="section-title">Equipe</h2>
+        <div class="section-divider"></div>
+
+        <div class="team-list">
+            <article class="team-member">
+                <div class="avatar-photo">
+                    <img src="../../img/kim.jpg" alt="Photo Tran Kim-Lan">
+                </div>
+                <h3 class="team-name">TRAN Kim-Lan</h3>
+                <a class="team-github" href="https://github.com/Imyahan" target="_blank">
+                    github.com/Imyahan
+                </a>
+            </article>
+
+            <article class="team-member">
+                <div class="avatar-photo">
+                    <img src="../../img/nicolas_profil.png" alt="Photo Estermann Nicolas">
+                </div>
+                <h3 class="team-name">ESTERMANN Nicolas</h3>
+                <a class="team-github" href="https://github.com/Legallait" target="_blank">
+                    github.com/Legallait
+                </a>
+            </article>
+
+            <article class="team-member">
+                <div class="avatar-photo">
+                    <img src="../../img/yannick_profil.png" alt="Photo Han Yannick">
+                </div>
+                <h3 class="team-name">HAN Yannick</h3>
+                <a class="team-github" href="https://github.com/Kim" target="_blank">
+                    github.com/Kim
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <!-- PROJET -->
+    <section class="section-apropos">
+        <h2 class="section-title">Projet</h2>
+        <div class="section-divider"></div>
+
+        <p class="project-text">
+            Ce projet a été réalisé dans le cadre du module <strong>TI504N – Programmation Web</strong>.
+            Il avait pour objectif principal la conception d’un <strong>site vitrine du département
+            d’informatique de l’EFREI</strong>, permettant de présenter de manière claire et structurée
+            les informations essentielles du département.
+        </p>
+
+        <p class="project-text">
+            Le site a été développé exclusivement en <strong>HTML5, CSS3 et JavaScript</strong>,
+            sans utilisation de frameworks ni de bibliothèques externes, conformément aux consignes.
+            Une attention particulière a été portée à la <strong>qualité du code</strong>, à la
+            <strong>structure des pages</strong> ainsi qu’au <strong>design responsive</strong>,
+            afin d’assurer une navigation fluide sur tous les supports.
+        </p>
+
+        <p class="project-text">
+            Ce projet a également permis de développer le <strong>travail collaboratif</strong> au sein
+            du groupe, notamment grâce à l’utilisation de <strong>Git et GitHub</strong> pour la gestion
+            des versions, le partage du code et le suivi des contributions de chacun.
+        </p>
+
+        <div class="section-divider section-divider-light"></div>
+    </section>
+
+    <!-- TRAVAIL DE CHAQUE MEMBRE -->
+    <section class="section-apropos">
+        <h2 class="section-title">Travail de chaque membre</h2>
+
+        <div class="work-list">
+            <!-- Kim-->
+            <article class="work-item">
+                <div class="avatar-photo avatar-small">
+                    <img src="../../img/kim.jpg" alt="Photo Tran Kim-Lan">
+                </div>
+                <div class="work-content">
+                    <h3 class="work-name">TRAN Kim-Lan</h3>
+                    <p class="work-subtitle">Efrei Paris – Promo 2028 (ING1 NEW 3)</p>
+                    <a class="team-github" href="https://github.com/Imyahan" target="_blank">
+                        github.com/Imyahan
+                    </a>
+                    <p class="work-text">
+                        Kim-Lan a été en charge de la conception et du développement des pages liées aux
+                        <strong>départements</strong>, aux <strong>enseignants</strong> et aux
+                        <strong>enseignements</strong>. Elle a structuré le contenu principal du site afin
+                        d’assurer une présentation claire, cohérente et fidèle à l’identité du département,
+                        tout en veillant au respect du design responsive et des contraintes techniques.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Nicolas-->
+            <article class="work-item">
+                <div class="avatar-photo avatar-small">
+                    <img src="../../img/nicolas_profil.png" alt="Photo Estermann Nicolas">
+                </div>
+                <div class="work-content">
+                    <h3 class="work-name">ESTERMANN Nicolas</h3>
+                    <p class="work-subtitle">Efrei Paris – Promo 2028 (ING1 NEW 3)</p>
+                    <a class="team-github" href="https://github.com/Legallait" target="_blank">
+                        github.com/Legallait
+                    </a>
+                    <p class="work-text">
+                        Nicolas s’est occupé du développement de la <strong>page du planning des cours</strong>
+                        ainsi que de la <strong>page À propos</strong>. Il a travaillé sur la mise en page,
+                        la lisibilité des informations et la cohérence graphique globale du site, en veillant
+                        à respecter les bonnes pratiques HTML/CSS et l’ergonomie utilisateur.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Yannick-->
+            <article class="work-item">
+                <div class="avatar-photo avatar-small">
+                    <img src="../../img/yannick_profil.png" alt="Photo Han Yannick">
+                </div>
+                <div class="work-content">
+                    <h3 class="work-name">HAN Yannick</h3>
+                    <p class="work-subtitle">Efrei Paris – Promo 2028 (ING1 NEW 3)</p>
+                    <a class="team-github" href="https://github.com/Kim" target="_blank">
+                        github.com/Kim
+                    </a>
+                    <p class="work-text">
+                        Yannick a été responsable de la conception de la <strong>page d’accueil</strong> ainsi
+                        que du <strong>formulaire</strong>. Il a mis l’accent sur l’ergonomie, la navigation
+                        et l’expérience utilisateur, afin de proposer une interface intuitive et accessible,
+                        tout en respectant l’identité visuelle du site.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
 </main>
+
 <footer>
     <section class="footer-links">
         <div class="footer-contacts">
             <a href="https://www.efrei.fr/" target="_blank"><img src="../../img/logo2.png" alt="efrei" class="logo"></a>
-            <p>Accueil <br/>
-                +33 188 289 000</p>
+            <p>Accueil <br/>+33 188 289 000</p>
             <p>Campus Paris
                 +33 188 289 001 <br/>
                 admissions@efrei.fr <br/>
-                30-32 Av. de la République, 94800 Villejuif</p>
+                30-32 Av. de la République, 94800 Villejuif
+            </p>
             <p>Campus Bordeaux
                 +33 582 060 162 <br/>
                 admissions@efrei.fr <br/>
-                83 Rue Lucien Faure, 33000 Bordeaux</p>
+                83 Rue Lucien Faure, 33000 Bordeaux
+            </p>
         </div>
         <div class="links">
             <ul>
