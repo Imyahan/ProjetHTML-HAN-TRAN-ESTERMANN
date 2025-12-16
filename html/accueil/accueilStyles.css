@@ -3,7 +3,8 @@
     display: grid;
     grid-template-columns: 80% 20%;
     align-items: center;
-    padding: 50px;
+    margin: 25px;
+    gap: 20px;
 }
 
 .pro_cours_images {
@@ -17,15 +18,6 @@
     width: 100%;
     border-radius: 15px;
 }
-
-.box {
-    height: 600px;
-    width: 100%;
-    
-    background-position: center;
-    background-size: cover;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;}
-
 .img1 {
     border-radius: 0px 50px;
     background-image: url("../../img/img1.jpg");
@@ -46,8 +38,73 @@
     background-image: url("../../img/img4.jpg");
 }
 
+.img5 {
+    border-radius: 50px 0px;
+    background-image: url("../../img/img5.jpg");
+}
+
+.img6 {
+    border-radius: 50px;
+    background-image: url("../../img/img6.jpg");
+}
+
+/* --- Carousel styles --- */
+.carousel{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    justify-content:center;
+    padding:30px;
+}
+
+.carousel__track-container{
+    overflow:hidden;
+    border: none;
+    border-radius:12px;
+    /* width:1020px; */
+}
+
+.carousel__track{
+    display:flex;
+    list-style:none;
+    padding:0;
+    margin:0;
+    transition:transform 0.5s ease;
+}
+
+.carousel__slide{
+    min-width:360px;
+    height:700px;
+    margin:0 10px;
+    background-size:cover;
+    background-position:center;
+    border-radius:12px;
+    box-shadow:0 10px 24px rgba(0,0,0,0.18);
+    flex:0 0 auto;
+}
+
+.carousel__btn{
+    background:#147bbe;
+    color:#fff;
+    border:0;
+    border-radius:6px;
+    padding:8px 12px;
+    font-size:22px;
+    cursor:pointer;
+}
+
+.carousel__btn:focus{
+    outline:2px solid #ffd54a;
+}
+
+@media (max-width:900px){
+    .carousel__track-container{width:90vw}
+    .carousel__slide{min-width:70vw;height:36vh}
+}
+
 .pro_cours_text {
-    height:500px;
+    height: 80%;
+    margin-right:30px;
     border: 2px solid black;
     border-radius: 25px;
     text-align: center;
@@ -81,12 +138,25 @@
 
 .Nos_equipes a {
     color: black;
+    font-weight: bold;
+    &:hover {
+        color: #147bbe;
+    }
+}
+
+.Nos_equipes img {
+    transition: all 0.3s;
+    &:hover {
+        transform: scale(1.25);
+        transition: all 0.3s;
+    }
 }
 
 .part3 {
     text-align: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    height: 500px;
 
     border: 5px solid black;
     margin: 50px;
@@ -104,48 +174,73 @@
     border-bottom: 2px solid gray;
 }
 
+.part3_text p {
+    padding: 10px;
+}
+
 .part3_text button {
     font-size: 20px;
     background-color: #147bbe;
     color: white;
     border-radius: 20px;
     padding: 10px 20px;
+    cursor: pointer;
 }
 
-
-/*Partie sur les cours */
-/* Bloc d'un cours */
-.coursItem {
-    text-align: left;
-    margin: 10px 0;
-    padding: 8px;
-    border-radius: 6px;
+.part3_text button:hover {
+    background-color: #0f5d85;
 }
 
-/* Titres + valeurs */
-.label {
-    font-weight: bold;
-    color: #147bbe;
+.part3_img {
+    background-image: url("../../img/img1.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px 25px 25px 5px;
+    height: 100%;
 }
 
-.value {
-    color: black;
-}
+/* adaptation responsive */
+@media (max-width: 900px) {
+    .carousel{
+        display: none;  
+    }
 
-.salle {
-    color: red;
-}
+    .pro_cours_text {
+        margin-right: 0px;
+    }
 
-.groupe {
-    color: #F88F52 ;
-}
 
-.prof {
-    color: #4A919E  ;
-}
+    .part1 {
+        margin: 0px;
+        grid-template-columns: 1fr;
+        text-align: center;
 
-.heureMini {
-    margin-top: 4px;
-    font-weight: bold;
-    color: #1C5588;
+        border: 1px solid black;
+    }
+
+    .pro_cours_images {
+        grid-template-columns: 1fr;
+    }
+
+    .Nos_equipes {
+        grid-template-columns: 1fr;
+    }
+
+    .part2 {
+        margin: 0px;
+        border: none;
+        border-radius: 0px;
+    }
+
+    .part3 {
+        grid-template-columns: 1fr;
+        height: auto;
+        margin: 0px;
+        border: none;
+    }
+
+    .part3_img {
+        border-radius: 0px;
+        height: 300px;
+    }
 }
