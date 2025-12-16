@@ -112,9 +112,10 @@
 }
 
 .les_cours {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
     padding: 20px;
 }
 

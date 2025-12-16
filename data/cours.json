@@ -1,220 +1,313 @@
 {
-  "semaine": "39-40",
-  "jours": [
+  "semaines": [
     {
-      "date": "21 mars",
-      "cours": [
+      "num": "50-51",
+      "jours": [
         {
-          "heureDebut": "08:00",
-          "heureFin": "09:10",
-          "nom": "Conception",
-          "prof": "Didier Meier",
-          "salle": "A304"
+          "date": "Lundi 15 décembre",
+          "color": "#CE6A6B",
+          "cours": [
+            { "nom": "Conception (CM)", "prof": "Didier Meier", "salle": "A304", "heureDebut": "08:00", "heureFin": "09:30" },
+            { "nom": "Programmation Orientée Objet (TD)", "prof": "Marie Dupont", "salle": "B102", "heureDebut": "10:00", "heureFin": "11:30" },
+            { "nom": "Mathématiques discrètes (CM)", "prof": "Claire Bernard", "salle": "C003", "heureDebut": "14:00", "heureFin": "15:30" },
+            { "nom": "Projet de groupe", "prof": "Luc Morel", "salle": "Salle projet 1", "heureDebut": "16:00", "heureFin": "18:00" }
+          ]
         },
         {
-          "heureDebut": "10:00",
-          "heureFin": "11:10",
-          "nom": "Programmation Orientée Objet",
-          "prof": "Marie Dupont",
-          "salle": "B102"
+          "date": "Mardi 16 décembre",
+          "color": "#EBACA2",
+          "cours": [
+            { "nom": "Systèmes d’exploitation (CM)", "prof": "Jean Muller", "salle": "B204", "heureDebut": "08:30", "heureFin": "10:00" },
+            { "nom": "Systèmes d’exploitation (TP)", "prof": "Jean Muller", "salle": "B204", "heureDebut": "10:15", "heureFin": "12:00" },
+            { "nom": "Développement Web (TD)", "prof": "Sophie Martin", "salle": "A112", "heureDebut": "14:00", "heureFin": "15:30" },
+            { "nom": "Réunion projet", "prof": "Encadrement", "salle": "Salle projet 2", "heureDebut": "16:00", "heureFin": "17:00" }
+          ]
         },
         {
-          "heureDebut": "13:30",
-          "heureFin": "15:00",
-          "nom": "Bases de données",
-          "prof": "Luc Morel",
-          "salle": "A210"
+          "date": "Mercredi 17 décembre",
+          "color": "#F88F52",
+          "cours": [
+            { "nom": "Analyse (CM)", "prof": "Claire Bernard", "salle": "C003", "heureDebut": "08:00", "heureFin": "09:30" },
+            { "nom": "Analyse (TD)", "prof": "Claire Bernard", "salle": "C003", "heureDebut": "09:45", "heureFin": "11:15" },
+            { "nom": "Programmation Orientée Objet (TP)", "prof": "Marie Dupont", "salle": "B102", "heureDebut": "14:00", "heureFin": "16:00" }
+          ]
         },
         {
-          "heureDebut": "17:00",
-          "heureFin": "18:30",
-          "nom": "Mathématiques discrètes",
-          "prof": "Claire Bernard",
-          "salle": "C003"
+          "date": "Jeudi 18 décembre",
+          "color": "#4A919E",
+          "cours": [
+            { "nom": "Bases de données (CM)", "prof": "Luc Morel", "salle": "A210", "heureDebut": "08:00", "heureFin": "09:30" },
+            { "nom": "Bases de données (TP)", "prof": "Luc Morel", "salle": "A210", "heureDebut": "10:00", "heureFin": "12:00" },
+            { "nom": "Développement Web (TP)", "prof": "Sophie Martin", "salle": "A112", "heureDebut": "14:00", "heureFin": "16:00" }
+          ]
+        },
+        {
+          "date": "Vendredi 19 décembre",
+          "color": "#7DC2A5",
+          "cours": [
+            { "nom": "Conception (TD)", "prof": "Didier Meier", "salle": "A304", "heureDebut": "09:00", "heureFin": "10:30" },
+            { "nom": "Projet transverse", "prof": "Luc Morel", "salle": "Salle projet 1", "heureDebut": "11:00", "heureFin": "13:00" },
+            { "nom": "Révisions encadrées", "prof": "Encadrement", "salle": "A004", "heureDebut": "14:00", "heureFin": "16:00" }
+          ]
         }
       ]
     },
     {
-      "date": "22 mars",
-      "cours": [
+      "num": "51-52",
+      "jours": [
         {
-          "heureDebut": "09:00",
-          "heureFin": "10:30",
-          "nom": "Conception",
-          "prof": "Didier Meier",
-          "salle": "A304"
+          "date": "Lundi 22 décembre",
+          "color": "#CE6A6B",
+          "cours": [
+            {
+              "nom": "Analyse",
+              "prof": "Claire Bernard",
+              "salle": "C003",
+              "heureDebut": "08:00",
+              "heureFin": "09:30"
+            },
+            {
+              "nom": "Programmation Orientée Objet",
+              "prof": "Marie Dupont",
+              "salle": "B102",
+              "heureDebut": "10:00",
+              "heureFin": "11:30"
+            },
+            {
+              "nom": "Projet de groupe",
+              "prof": "Luc Morel",
+              "salle": "Salle projet 1",
+              "heureDebut": "14:00",
+              "heureFin": "17:00"
+            }
+          ]
         },
         {
-          "heureDebut": "11:00",
-          "heureFin": "12:10",
-          "nom": "Systèmes d’exploitation",
-          "prof": "Jean Muller",
-          "salle": "B204"
+          "date": "Mardi 23 décembre",
+          "color": "#EBACA2",
+          "cours": [
+            {
+              "nom": "Développement Web",
+              "prof": "Sophie Martin",
+              "salle": "A112",
+              "heureDebut": "08:00",
+              "heureFin": "09:30"
+            },
+            {
+              "nom": "Bases de données",
+              "prof": "Luc Morel",
+              "salle": "A210",
+              "heureDebut": "10:00",
+              "heureFin": "11:30"
+            },
+            {
+              "nom": "Révision encadrée",
+              "prof": "Encadrement",
+              "salle": "A004",
+              "heureDebut": "15:00",
+              "heureFin": "16:30"
+            }
+          ]
         },
         {
-          "heureDebut": "14:00",
-          "heureFin": "15:30",
-          "nom": "Développement Web",
-          "prof": "Sophie Martin",
-          "salle": "A112"
+          "date": "Mercredi 24 décembre",
+          "color": "#F88F52",
+          "cours": [
+            {
+              "nom": "Devoir surveillé – Analyse",
+              "prof": "Claire Bernard",
+              "salle": "Amphi B",
+              "heureDebut": "09:00",
+              "heureFin": "11:00"
+            },
+            {
+              "nom": "Devoir surveillé – Programmation Orientée Objet",
+              "prof": "Marie Dupont",
+              "salle": "Amphi A",
+              "heureDebut": "14:00",
+              "heureFin": "16:00"
+            }
+          ]
+        },
+        {
+          "date": "Jeudi 25 décembre",
+          "color": "#4A919E",
+          "cours": [
+            {
+              "nom": "Travail personnel encadré",
+              "prof": "Encadrement",
+              "salle": "À distance",
+              "heureDebut": "10:00",
+              "heureFin": "12:00"
+            }
+          ]
+        },
+        {
+          "date": "Vendredi 26 décembre",
+          "color": "#7DC2A5",
+          "cours": [
+            {
+              "nom": "Bilan intermédiaire de semestre",
+              "prof": "Encadrement",
+              "salle": "Salle projet 1",
+              "heureDebut": "09:30",
+              "heureFin": "11:00"
+            }
+          ]
         }
       ]
     },
     {
-      "date": "23 mars",
-      "cours": [
+      "num": "53-54",
+      "jours": [
         {
-          "heureDebut": "08:30",
-          "heureFin": "09:40",
-          "nom": "Analyse",
-          "prof": "Claire Bernard",
-          "salle": "C003"
+          "date": "Lundi 29 décembre",
+          "color": "#CE6A6B",
+          "cours": [
+            {
+              "nom": "Conception",
+              "prof": "Didier Meier",
+              "salle": "A304",
+              "heureDebut": "09:00",
+              "heureFin": "10:30"
+            },
+            {
+              "nom": "Conception",
+              "prof": "Didier Meier",
+              "salle": "A304",
+              "heureDebut": "11:00",
+              "heureFin": "12:30"
+            },
+            {
+              "nom": "Projet de groupe",
+              "prof": "Luc Morel",
+              "salle": "Salle projet 1",
+              "heureDebut": "14:00",
+              "heureFin": "15:30"
+            },
+            {
+              "nom": "Programmation Orientée Objet",
+              "prof": "Marie Dupont",
+              "salle": "B102",
+              "heureDebut": "15:30",
+              "heureFin": "18:00"
+            }
+          ]
         },
         {
-          "heureDebut": "10:00",
-          "heureFin": "11:30",
-          "nom": "Programmation Orientée Objet",
-          "prof": "Marie Dupont",
-          "salle": "B102"
+          "date": "Mardi 30 décembre",
+          "color": "#EBACA2",
+          "cours": [
+            {
+              "nom": "Développement Web",
+              "prof": "Sophie Martin",
+              "salle": "A112",
+              "heureDebut": "08:00",
+              "heureFin": "09:00"
+            },
+            {
+              "nom": "Systèmes d’exploitation",
+              "prof": "Jean Muller",
+              "salle": "B204",
+              "heureDebut": "09:00",
+              "heureFin": "10:30"
+            },
+            {
+              "nom": "Développement Web",
+              "prof": "Sophie Martin",
+              "salle": "A112",
+              "heureDebut": "14:00",
+              "heureFin": "15:30"
+            },
+            {
+              "nom": "Projet de groupe",
+              "prof": "Luc Morel",
+              "salle": "Salle projet 1",
+              "heureDebut": "16:00",
+              "heureFin": "17:30"
+            }
+          ]
         },
         {
-          "heureDebut": "16:00",
-          "heureFin": "17:30",
-          "nom": "Projet de groupe",
-          "prof": "Luc Morel",
-          "salle": "Salle projet 1"
+          "date": "Mercredi 31 décembre",
+          "color": "#F88F52",
+          "cours": [
+            {
+              "nom": "Projet de groupe",
+              "prof": "Luc Morel",
+              "salle": "Salle projet 1",
+              "heureDebut": "09:30",
+              "heureFin": "11:00"
+            },
+            {
+              "nom": "PDO : programmation orienté objet",
+              "prof": "Luc Morel",
+              "salle": "H404",
+              "heureDebut": "11:00",
+              "heureFin": "11:00"
+            },
+            {
+              "nom": "Web, HTML, CSS, javascript",
+              "prof": "Luc Morel",
+              "salle": "H201",
+              "heureDebut": "11:00",
+              "heureFin": "14:00"
+            },
+            {
+              "nom": "Projet transverse",
+              "prof": "Luc Morel",
+              "salle": "A205",
+              "heureDebut": "15:00",
+              "heureFin": "17:00"
+            }
+          ]
         },
         {
-          "heureDebut": "18:00",
-          "heureFin": "19:00",
-          "nom": "Révision encadrée",
-          "prof": "Encadrement",
-          "salle": "A004"
-        }
-      ]
-    },
-    {
-      "date": "24 mars",
-      "cours": [
-        {
-          "heureDebut": "08:00",
-          "heureFin": "09:10",
-          "nom": "Développement Web",
-          "prof": "Sophie Martin",
-          "salle": "A112"
+          "date": "Jeudi 1 janvier",
+          "color": "#4A919E",
+          "cours": [
+            {
+              "nom": "Révisions libres",
+              "prof": "Autonomie",
+              "salle": "À distance",
+              "heureDebut": "10:00",
+              "heureFin": "11:30"
+            },
+            {
+              "nom": "Révisions libres",
+              "prof": "Autonomie",
+              "salle": "À distance",
+              "heureDebut": "12:00",
+              "heureFin": "14:00"
+            },
+            {
+              "nom": "Révisions libres",
+              "prof": "Autonomie",
+              "salle": "À distance",
+              "heureDebut": "14:10",
+              "heureFin": "15h20"
+            },
+            {
+              "nom": "Révisions libres",
+              "prof": "Autonomie",
+              "salle": "À distance",
+              "heureDebut": "15:30",
+              "heureFin": "17h00"
+            }
+          ]
         },
         {
-          "heureDebut": "10:30",
-          "heureFin": "12:00",
-          "nom": "Systèmes d’exploitation",
-          "prof": "Jean Muller",
-          "salle": "B204"
-        },
-        {
-          "heureDebut": "15:00",
-          "heureFin": "16:30",
-          "nom": "Bases de données",
-          "prof": "Luc Morel",
-          "salle": "A210"
-        }
-      ]
-    },
-    {
-      "date": "25 mars",
-      "cours": [
-        {
-          "heureDebut": "09:00",
-          "heureFin": "10:15",
-          "nom": "Analyse",
-          "prof": "Claire Bernard",
-          "salle": "C003"
-        },
-        {
-          "heureDebut": "11:00",
-          "heureFin": "12:30",
-          "nom": "Conception",
-          "prof": "Didier Meier",
-          "salle": "A304"
-        },
-        {
-          "heureDebut": "14:00",
-          "heureFin": "15:30",
-          "nom": "Projet de groupe",
-          "prof": "Luc Morel",
-          "salle": "Salle projet 1"
-        },
-        {
-          "heureDebut": "17:30",
-          "heureFin": "19:00",
-          "nom": "Mathématiques discrètes",
-          "prof": "Claire Bernard",
-          "salle": "C003"
-        }
-      ]
-    },
-    {
-      "date": "26 mars",
-      "cours": [
-        {
-          "heureDebut": "08:00",
-          "heureFin": "09:10",
-          "nom": "Conception",
-          "prof": "Didier Meier",
-          "salle": "A304"
-        },
-        {
-          "heureDebut": "10:00",
-          "heureFin": "11:10",
-          "nom": "Programmation Orientée Objet",
-          "prof": "Marie Dupont",
-          "salle": "B102"
-        },
-        {
-          "heureDebut": "13:30",
-          "heureFin": "15:00",
-          "nom": "Bases de données",
-          "prof": "Luc Morel",
-          "salle": "A210"
-        },
-        {
-          "heureDebut": "17:00",
-          "heureFin": "18:30",
-          "nom": "Mathématiques discrètes",
-          "prof": "Claire Bernard",
-          "salle": "C003"
-        }
-      ]
-    },
-    {
-      "date": "27 mars",
-      "cours": [
-        {
-          "heureDebut": "08:00",
-          "heureFin": "09:10",
-          "nom": "Conception",
-          "prof": "Didier Meier",
-          "salle": "A304"
-        },
-        {
-          "heureDebut": "10:00",
-          "heureFin": "11:10",
-          "nom": "Programmation Orientée Objet",
-          "prof": "Marie Dupont",
-          "salle": "B102"
-        },
-        {
-          "heureDebut": "13:30",
-          "heureFin": "15:00",
-          "nom": "Bases de données",
-          "prof": "Luc Morel",
-          "salle": "A210"
-        },
-        {
-          "heureDebut": "17:00",
-          "heureFin": "18:30",
-          "nom": "Mathématiques discrètes",
-          "prof": "Claire Bernard",
-          "salle": "C003"
+          "date": "Vendredi 2 janvier",
+          "color": "#7DC2A5",
+          "cours": [
+            {
+              "nom": "Bilan de projet",
+              "prof": "Encadrement",
+              "salle": "Salle projet 1",
+              "heureDebut": "14:00",
+              "heureFin": "15:30"
+            }
+          ]
         }
       ]
     }
