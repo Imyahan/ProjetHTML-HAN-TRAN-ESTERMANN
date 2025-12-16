@@ -5,6 +5,7 @@
     <link rel="icon" type="image/x-icon" href="../../img/favicon.png">
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" type="text/css" href="accueilStyles.css">
+    <script src="accueil.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -20,11 +21,20 @@
     </header>
     <main>
         <section class="part1">
-            <div class="pro_cours_images">
-                <div class="box img1"></div>
-                <div class="box img2"></div>
-                <div class="box img3"></div>
-                <div class="box img4"></div>
+            <!-- Carousel: remplace .pro_cours_images -->
+            <div class="carousel" aria-label="Carousel des cours">
+                <button class="carousel__btn carousel__btn--prev" aria-label="Précédent">‹</button>
+                <div class="carousel__track-container">
+                    <ul class="carousel__track">
+                        <li class="carousel__slide img1" aria-hidden="false"></li>
+                        <li class="carousel__slide img2" aria-hidden="true"></li>
+                        <li class="carousel__slide img3" aria-hidden="true"></li>
+                        <li class="carousel__slide img4" aria-hidden="true"></li>
+                        <li class="carousel__slide img5" aria-hidden="true"></li>
+                        <li class="carousel__slide img6" aria-hidden="false"></li>
+                    </ul>
+                </div>
+                <button class="carousel__btn carousel__btn--next" aria-label="Suivant">›</button>
             </div>
             <div class="pro_cours_text">
                 <h1>Prochain cours</h1>
@@ -91,7 +101,7 @@
             </div>
             <div class="links">
                 <ul>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="../contact/contact.html">Contact</a></li>
                     <li><a href="">A propos</a></li>
                     <li><a href="">Données personnelles</a></li>
                     <li><a href="">Cookies</a></li>
