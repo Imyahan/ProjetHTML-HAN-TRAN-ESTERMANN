@@ -58,6 +58,10 @@ footer a {
     color: white;
 }
 
+footer a:hover {
+    color: black;
+}
+
 .footer-links {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -95,4 +99,23 @@ body {
 
 a {
     text-decoration: none;
+}
+
+/* ---------------- responsive ---------------- */
+@media (max-width: 600px) {
+    nav{
+        display: block;
+        text-align: center;
+        margin-right: 0px;
+    }
+    .logo {
+        margin: 5px;
+    }
+    .nav-links {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr;
+    }
 }

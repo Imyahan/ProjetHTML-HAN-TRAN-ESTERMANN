@@ -1,26 +1,93 @@
-fetch("../../data/cours.json")
-    .then(r => r.json())
-    .then(data => genererEDT(data));
+let semaineActuelle = 0;
+let jourActuel = 0;
+let modeActuel = "week";
+let dataCache = null;
 
+/* ------------------ CHARGEMENT ------------------ */
+function chargerSemaine(index){
+    fetch("../../data/cours.json")
+        .then(r => r.json())
+        .then(data => {
 
-function genererEDT(data) {
+            dataCache = data.semaines;
+            if (index < 0) index = 0;
+            if (index >= dataCache.length) index = dataCache.length - 1;
+            semaineActuelle = index;
+            const semaineData = dataCache[semaineActuelle];
+
+            document.getElementById("edt-semaine-titre").textContent =
+                "Semaine " + semaineData.num;
+
+            if(modeActuel === "week"){
+                genererEDT(semaineData);
+            } else {
+                genererJour(semaineData, jourActuel);
+            }
+        });
+}
+
+/* ------------------ OUTIL : calcul du créneau ------------------ */
+function obtenirCreneau(heureDebut){
+    const creneaux = ["08","10","12","14","16","18"];
+    let [hStr] = heureDebut.split(":");
+    let hour = parseInt(hStr, 10);
+
+    if(hour % 2 !== 0){
+        hour++;
+    }
+
+    const hFormatee = hour.toString().padStart(2, "0");
+    return creneaux.indexOf(hFormatee) + 1;
+}
+
+/* Synchronisation du scroll entre les dates et la grille */
+function syncScroll() {
+    const header = document.getElementById("edt-jours-header");
+    const container = document.getElementById("edt-container");
+
+    let isSyncing = false;
+
+    header.addEventListener("scroll", () => {
+        if (isSyncing) return;
+        isSyncing = true;
+        container.scrollLeft = header.scrollLeft;
+        isSyncing = false;
+    });
+
+    container.addEventListener("scroll", () => {
+        if (isSyncing) return;
+        isSyncing = true;
+        header.scrollLeft = container.scrollLeft;
+        isSyncing = false;
+    });
+}
+
+syncScroll();
+
+/* ----------------- VUE SEMAINE ------------------ */
+function genererEDT(semaineData) {
+
+    document.body.classList.remove("mode-jour");
 
     const edtHeader = document.getElementById("edt-jours-header");
     const edtHeures = document.getElementById("edt-heures");
     const edtJours = document.getElementById("edt-jours");
 
-    const creneaux = ["08", "10", "12", "14", "16", "18"];
+    edtHeader.innerHTML = "<div></div>";
+    edtHeures.innerHTML = "";
+    edtJours.innerHTML = "";
 
-    /* --- JOURS --- */
-    edtHeader.innerHTML = "<div></div>"; // case vide
-    data.jours.forEach(j => {
+    const creneaux = ["08","10","12","14","16","18"];
+
+    // Header des jours
+    semaineData.jours.forEach(j => {
         let div = document.createElement("div");
         div.classList.add("jour-header");
         div.textContent = j.date;
         edtHeader.appendChild(div);
     });
 
-    /* --- HEURES --- */
+    // Heures
     creneaux.forEach(h => {
         let div = document.createElement("div");
         div.classList.add("heure");
@@ -28,17 +95,13 @@ function genererEDT(data) {
         edtHeures.appendChild(div);
     });
 
-    /* --- COURS --- */
-    data.jours.forEach((jour, dayIndex) => {
-
+    // Cours
+    semaineData.jours.forEach((jour, dayIndex) => {
         jour.cours.forEach(c => {
-            const startHour = c.heureDebut.split(":")[0];
-
-            // Ligne correspondante
-            const row = creneaux.indexOf(startHour) + 1;
-
+            const row = obtenirCreneau(c.heureDebut);
             const bloc = document.createElement("div");
             bloc.classList.add("cours");
+            bloc.style.background = semaineData.jours[dayIndex].color;
 
             bloc.innerHTML = `
                 <strong>${c.nom}</strong><br>
@@ -46,53 +109,146 @@ function genererEDT(data) {
                 Salle ${c.salle}<br>
                 ${c.heureDebut} - ${c.heureFin}
             `;
-
-            bloc.style.gridColumn = dayIndex + 2; /* +2 car col1 = heures */
+            bloc.style.gridColumn = dayIndex + 2;
             bloc.style.gridRow = row;
 
             edtJours.appendChild(bloc);
         });
     });
+
+    document.getElementById("edt-container").style.gridTemplateColumns =
+        "50px repeat(7, 1fr)";
+
+    edtHeader.style.display = "grid";
+    limiterScrollSemaineMobile(semaineData);
 }
 
-let semaineActuelle = 40;
-let dataCache = null;
+/* ------------------ VUE JOUR ------------------ */
+function genererJour(semaineData, indexJour){
 
-function chargerSemaine(num){
-    fetch("../../data/cours.json")
-        .then(r => r.json())
-        .then(data => {
-            dataCache = data;
-            document.getElementById("edt-semaine-titre").textContent =
-                "Semaine " + data.semaine;
+    document.body.classList.add("mode-jour");
 
-            genererEDT(data);
-        });
+    const edtHeader = document.getElementById("edt-jours-header");
+    const edtHeures = document.getElementById("edt-heures");
+    const edtJours = document.getElementById("edt-jours");
+
+    edtHeader.innerHTML = "<div></div>";
+    edtHeures.innerHTML = "";
+    edtJours.innerHTML = "";
+
+    const creneaux = ["08","10","12","14","16","18"];
+
+    // Header du jour
+    let h = document.createElement("div");
+    h.classList.add("jour-header");
+    h.textContent = semaineData.jours[indexJour].date;
+    edtHeader.appendChild(h);
+
+    // Heures
+    creneaux.forEach(hh => {
+        let div = document.createElement("div");
+        div.classList.add("heure");
+        div.textContent = hh + "h";
+        edtHeures.appendChild(div);
+    });
+
+    // Cours du jour
+    semaineData.jours[indexJour].cours.forEach(c => {
+
+        const row = obtenirCreneau(c.heureDebut);
+
+        const bloc = document.createElement("div");
+        bloc.classList.add("cours");
+        bloc.style.background = semaineData.jours[indexJour].color;
+
+        bloc.innerHTML = `
+            <strong>${c.nom}</strong><br>
+            ${c.prof}<br>
+            Salle ${c.salle}<br>
+            ${c.heureDebut} - ${c.heureFin}
+        `;
+
+        bloc.style.gridColumn = 2;
+        bloc.style.gridRow = row;
+
+        edtJours.appendChild(bloc);
+    });
+
+    // grille 1 jour
+    document.getElementById("edt-container").style.gridTemplateColumns =
+        "50px 1fr";
+
+    edtHeader.style.display = "flex";
+    edtHeader.style.justifyContent = "center";
 }
 
-chargerSemaine(semaineActuelle);
+/* ------------ CHANGEMENT DE VUE ------------------ */
+document.getElementById("view-select").addEventListener("change", (e) => {
+    modeActuel = e.target.value;
+
+    const semaineData = dataCache[semaineActuelle];
+
+    if(modeActuel === "week"){
+        genererEDT(semaineData);
+    } else {
+        genererJour(semaineData, jourActuel);
+    }
+});
+
+/* ------------ FLÈCHES pour passer de semaine ------------------ */
 document.getElementById("prev-week").addEventListener("click", () => {
-    semaineActuelle--;
-    chargerSemaine(semaineActuelle);
+    if(modeActuel === "week"){
+        chargerSemaine(semaineActuelle - 1);
+    } else {
+        jourActuel--;
+        if(jourActuel < 0){
+            chargerSemaine(semaineActuelle - 1);
+            jourActuel = dataCache[semaineActuelle].jours.length - 1;
+        }
+        genererJour(dataCache[semaineActuelle], jourActuel);
+    }
 });
 
 document.getElementById("next-week").addEventListener("click", () => {
-    semaineActuelle++;
-    chargerSemaine(semaineActuelle);
-});
-
-document.getElementById("view-select").addEventListener("change", (e) => {
-    const mode = e.target.value;
-
-    if(mode === "week"){
-        document.getElementById("edt-jours-header").style.display = "grid";
-        document.getElementById("edt-container").style.gridTemplateColumns = "50px repeat(7, 1fr)";
+    if(modeActuel === "week"){
+        chargerSemaine(semaineActuelle + 1);
     } else {
-        document.getElementById("edt-jours-header").style.display = "none";
-        document.getElementById("edt-container").style.gridTemplateColumns = "50px 1fr";
+        jourActuel++;
+        if(jourActuel >= dataCache[semaineActuelle].jours.length){
+            chargerSemaine(semaineActuelle + 1);
+            jourActuel = 0;
+        }
+        genererJour(dataCache[semaineActuelle], jourActuel);
     }
-
-    genererEDT(dataCache);
 });
+function limiterScrollSemaineMobile(semaineData) {
+    if (window.innerWidth > 600) return;
+    if (modeActuel !== "week") return;
 
+    const container = document.getElementById("edt-container");
+    const header = document.getElementById("edt-jours-header");
 
+    const nbJours = semaineData.jours.length; // normalement 5
+    const dayWidth = 140; // même valeur que --day-width
+    const colonneHeures = 50;
+
+    const largeurMax =
+        colonneHeures + nbJours * dayWidth - container.clientWidth;
+
+    const maxScroll = Math.max(0, largeurMax);
+
+    container.addEventListener("scroll", () => {
+        if (container.scrollLeft > maxScroll) {
+            container.scrollLeft = maxScroll;
+        }
+    });
+
+    header.addEventListener("scroll", () => {
+        if (header.scrollLeft > maxScroll) {
+            header.scrollLeft = maxScroll;
+        }
+    });
+}
+
+/* ---------------- Chargement ---------------- */
+chargerSemaine(semaineActuelle);

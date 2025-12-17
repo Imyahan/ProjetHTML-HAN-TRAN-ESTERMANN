@@ -1,0 +1,40 @@
+.contact_section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.contact_section fieldset {
+    border-radius: 15px;
+    padding: 15px;
+    display: grid;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.contact_section legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.contact_section input, .contact_section textarea {
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+
+.contact_section button {
+    background-color: #4CAF50;
+    color: white;
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact_section button:hover {
+    background-color: #45a049;
+}

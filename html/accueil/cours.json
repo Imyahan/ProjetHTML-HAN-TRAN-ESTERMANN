@@ -1,0 +1,22 @@
+{
+    "courses": [
+        {
+            "date": "2024-06-15",
+            "title": "Introduction to HTML",
+            "salle": "B205",
+            "duration": "4 weeks"
+        },
+        {
+            "date": "2024-07-01",
+            "title": "CSS Fundamentals",
+            "salle": "A101",
+            "duration": "6 weeks"
+        },
+        {
+            "date": "2024-08-01",
+            "title": "JavaScript Basics",
+            "salle": "C303",
+            "duration": "8 weeks"
+        }
+    ]
+}

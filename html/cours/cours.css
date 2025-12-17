@@ -1,7 +1,7 @@
 #edt-wrapper {
     width: 100%;
     margin-top: 10px;
-    margin-bottom: 10px ;
+    margin-bottom: 10px;
 }
 
 /* Header des jours */
@@ -20,8 +20,9 @@
 /* Grille principale */
 #edt-container {
     display: grid;
+    overflow-x: auto;
     grid-template-columns: 50px repeat(7, 1fr);
-    grid-template-rows: repeat(6, 90px);
+    grid-template-rows: repeat(6, minmax(90px, auto));
     gap: 10px;
     border: 3px solid #147bbe;
     border-radius: 20px;
@@ -53,25 +54,30 @@
     color: black;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     font-size: 13px;
+    padding: 4px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    box-sizing: border-box;
 }
 
 
 #edt-topbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    padding: 15px 5px;
-    margin-bottom: 10px;
+    padding: 15px;
     background: #147bbe;
     border-radius: 12px;
-    color: white;
+    margin-bottom: 20px;
 }
+
 
 #edt-controls {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     gap: 10px;
 }
 
@@ -88,9 +94,125 @@
     padding: 6px 10px;
     border-radius: 5px;
 }
-#edt-semaine-titre{
+
+#edt-semaine-titre {
     text-align: center;
-    font-weight: bold;
-    color: black;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 28px;
 }
+
+/* Mode jour */
+.mode-jour #edt-jours-header {
+    display: flex !important;
+    justify-content: center !important;
+    grid-template-columns: none !important;
+}
+
+/* Réduction globale de la section EDT */
+section {
+    transform-origin: top center;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+
+    :root {
+        --day-width: 140px;
+    }
+
+    /* HEADER DES JOURS */
+    #edt-jours-header::-webkit-scrollbar {
+        display: none;
+    }
+
+    #edt-jours-header {
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 0 !important;
+        margin: 0 !important;
+        gap: 0 !important;
+        width: 100% !important;
+        position: relative;
+        box-sizing: content-box;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    #edt-jours-header::before {
+        content: "";
+        display: inline-block;
+        width: 50px;
+        flex-shrink: 0;
+    }
+
+    .jour-header {
+        min-width: var(--day-width);
+        max-width: var(--day-width);
+        padding: 0 !important;
+        margin: 0 !important;
+        text-align: center !important;
+        font-size: 14px;
+    }
+
+    #edt-container {
+        overflow-x: auto !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        gap: 0 !important;
+        grid-template-columns: 50px repeat(7, var(--day-width)) !important;
+        box-sizing: content-box;
+    }
+
+    #edt-heures {
+        grid-column: 1;
+    }
+
+    #edt-jours {
+        grid-column: 2 / span 7;
+    }
+
+    .cours {
+        margin: 6px;
+        border-radius: 10px;
+        padding: 4px;
+    }
+
+    .mode-jour #edt-container {
+        grid-template-columns: 50px 1fr !important;
+        padding: 12px !important;
+    }
+
+    .mode-jour #edt-jours {
+        grid-column: 2;
+    }
+
+    .mode-jour .cours {
+        width: calc(100% - 12px);
+        margin: 10px auto;
+        padding: 12px;
+        text-align: center;
+        border-left: 6px solid rgba(0, 0, 0, 0.15);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    }
+
+    .mode-jour .cours strong {
+        display: block;
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+
+    .mode-jour .heure {
+        padding-top: 8px;
+        font-size: 13px;
+        font-weight: 600;
+    }
+}
+
+
+
+
 
