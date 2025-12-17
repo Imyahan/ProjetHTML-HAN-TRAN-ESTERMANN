@@ -207,27 +207,30 @@
 
 .Nos_equipes {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    max-width: 80%;
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-    padding: 50px;
-
-    text-align: center;
+    align-content: center;
+    padding:50px;
+    margin: 0 auto;
+    justify-items: center;
 }
 
 .Nos_equipes a {
     color: black;
-    font-weight: bold;
+}
+
+.Nos_equipes .equipe{
+    font-size: large;
+    transition: 0.3s;
     &:hover {
-        color: #147bbe;
+        transform: scale(1.25);
+        transition: 0.3s;
     }
 }
 
-.Nos_equipes img {
-    transition: all 0.3s;
-    &:hover {
-        transform: scale(1.25);
-        transition: all 0.3s;
-    }
+.Nos_equipes img{
+    height: 200px;
 }
 
 .part3 {
