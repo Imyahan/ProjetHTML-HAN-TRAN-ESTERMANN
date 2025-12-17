@@ -1,0 +1,82 @@
+[
+  {
+    "departement": "cloudComputing",
+    "couleur": "#173766",
+    "fond":"../../img/départements/cloudComputingLogo.png",
+    "descriptionDomaine": [
+      {
+        "descriptionGauche1": "Le département Cloud Computing explore les architectures de systèmes distribués et la conception de solutions hautement scalables. Les chercheurs étudient comment orchestrer des services cloud pour garantir performance, fiabilité et sécurité, tout en anticipant les besoins des entreprises et en intégrant des technologies émergentes comme le serverless et les microservices.",
+        "descriptionGauche2": "Une attention particulière est portée à la gestion des ressources, à la résilience et à la continuité des services. Les équipes développent des stratégies de migration vers le cloud, des solutions d’automatisation et des outils de supervision avancés afin de rendre les environnements cloud plus efficaces et adaptés aux exigences modernes.",
+        "descriptionDroite1": "Le département s’intéresse également aux problématiques de sécurité et de conformité des infrastructures cloud. L’intégration de protocoles de sécurité, la protection des données sensibles et la prévention des risques liés aux cyberattaques sont des axes de recherche majeurs, garantissant la confiance des utilisateurs et la robustesse des systèmes.",
+        "descriptionDroite2": "Enfin, les chercheurs explorent les interactions entre cloud et intelligence artificielle pour optimiser les performances, analyser les données en temps réel et proposer des solutions innovantes aux entreprises. La collaboration entre équipes techniques et métiers permet de développer des services cloud intelligents et adaptés à des usages variés."
+      }
+    ],
+    "projets": [
+      {
+        "projet1": { "image": "../../img/projets/cloudMigration.png", "texte": "Plateforme de migration automatisée vers le cloud pour PME, réduisant les coûts et les temps d’arrêt." },
+        "projet2": { "image": "../../img/projets/serverlessAI.png", "texte": "Intégration d’architectures serverless avec modules d’intelligence artificielle pour traitement temps réel des données." },
+        "projet3": { "image": "../../img/projets/cloudMonitoring.png", "texte": "Outil de supervision avancé pour assurer la résilience et la sécurité des infrastructures cloud multi-régions." }
+      }
+    ]
+  },
+  {
+    "departement": "intelligenceArtificielle",
+    "couleur": "#B1E2DF",
+    "fond":"../../img/départements/iaLogo.png",
+    "descriptionDomaine": [
+      {
+        "descriptionGauche1": "Le département Intelligence Artificielle se concentre sur la création et l’optimisation de modèles intelligents capables d’apprendre et de raisonner sur des données complexes. Les chercheurs explorent des techniques avancées d’apprentissage supervisé, non supervisé et par renforcement, en visant à rendre l’IA plus explicable et éthique.",
+        "descriptionGauche2": "Les projets incluent le développement d’algorithmes pour la prise de décision automatisée, la prédiction de comportements et l’analyse de grandes quantités de données. L’accent est mis sur la performance, la robustesse des modèles et la compréhension humaine des résultats produits par l’IA.",
+        "descriptionDroite1": "Le département étudie également l’impact sociétal et organisationnel de l’IA, en évaluant les implications éthiques, sociales et économiques des systèmes intelligents. Les chercheurs proposent des recommandations pour un usage responsable et durable de l’IA dans différents contextes industriels et scientifiques.",
+        "descriptionDroite2": "Enfin, la recherche inclut la combinaison de l’IA avec d’autres technologies, comme le cloud et le big data, pour créer des solutions innovantes capables de traiter des volumes massifs de données en temps réel, tout en garantissant transparence et sécurité dans les processus décisionnels."
+      }
+    ],
+    "projets": [
+      {
+        "projet1": { "image": "../../img/projets/iaPredictive.png", "texte": "Système prédictif pour la maintenance industrielle utilisant apprentissage supervisé et analyse de capteurs." },
+        "projet2": { "image": "../../img/projets/iaEthique.png", "texte": "Plateforme d’IA explicable permettant d’évaluer les décisions automatisées et d’assurer la transparence." },
+        "projet3": { "image": "../../img/projets/iaChatbot.png", "texte": "Assistant virtuel intelligent capable de comprendre et de répondre à des demandes complexes en langage naturel." }
+      }
+    ]
+  },
+  {
+    "departement": "bigData",
+    "couleur": "#0092B0",
+    "fond":"../../img/départements/dataLogo.png",
+    "descriptionDomaine": [
+      {
+        "descriptionGauche1": "Le département Big Data explore les méthodes de collecte, stockage et traitement de très grands volumes de données. Les chercheurs s’intéressent à l’architecture des pipelines de données, à l’optimisation des flux et à l’intégration des données issues de sources multiples et hétérogènes pour obtenir des informations pertinentes et exploitables.",
+        "descriptionGauche2": "Les projets incluent le développement de systèmes de traitement en temps réel, l’agrégation de données complexes et la visualisation avancée pour faciliter la prise de décision. Les chercheurs travaillent à rendre les données accessibles, compréhensibles et exploitables par les équipes métier et les décideurs.",
+        "descriptionDroite1": "Le département Big Data se penche également sur la qualité, la sécurité et la confidentialité des données. Les recherches visent à assurer l’intégrité, la fiabilité et la protection des informations tout en respectant les réglementations et standards en vigueur.",
+        "descriptionDroite2": "Enfin, les équipes explorent l’utilisation des données pour l’innovation, la prédiction et l’optimisation des processus. Les analyses avancées, l’intelligence artificielle et le machine learning sont combinés pour transformer les données en valeur stratégique et guider les décisions à tous les niveaux de l’organisation."
+      }
+    ],
+    "projets": [
+      {
+        "projet1": { "image": "../../img/projets/bigDataPipeline.png", "texte": "Pipeline de traitement temps réel pour analyser des flux de données IoT." },
+        "projet2": { "image": "../../img/projets/bigDataDashboard.png", "texte": "Tableau de bord interactif de visualisation de données pour les équipes métier." },
+        "projet3": { "image": "../../img/projets/bigDataAnalytics.png", "texte": "Système d’analyse prédictive combinant Big Data et Machine Learning pour l’optimisation des processus." }
+      }
+    ]
+  },
+  {
+    "departement": "cyberdéfense",
+    "couleur": "#3AB4FE",
+    "fond":"../../img/départements/cyberLogo.png",
+    "descriptionDomaine": [
+      {
+        "descriptionGauche1": "Le département Cyberdéfense se concentre sur la protection des systèmes, réseaux et infrastructures critiques contre les menaces numériques. Les chercheurs analysent les vulnérabilités, développent des protocoles de sécurité avancés et mettent en place des systèmes de surveillance pour détecter et neutraliser les attaques potentielles.",
+        "descriptionGauche2": "Les recherches incluent la prévention des intrusions, la sécurisation des données sensibles et la gestion des incidents. Les équipes développent des stratégies pour minimiser les risques et assurer la continuité des services dans des environnements complexes et en constante évolution.",
+        "descriptionDroite1": "Le département étudie également les aspects humains et organisationnels de la cybersécurité, en sensibilisant les utilisateurs et en formant les équipes aux bonnes pratiques. L’objectif est de créer une culture de sécurité partagée et de renforcer la résilience globale de l’organisation face aux cybermenaces.",
+        "descriptionDroite2": "Enfin, la recherche explore les technologies émergentes pour anticiper les menaces futures, notamment l’intelligence artificielle appliquée à la détection des attaques et la cryptographie avancée pour protéger les données. Les équipes collaborent avec les autres départements pour garantir une approche intégrée et proactive de la cyberdéfense."
+      }
+    ],
+    "projets": [
+      {
+        "projet1": { "image": "../../img/projets/cyberThreatDetection.png", "texte": "Système de détection d’attaques en temps réel basé sur l’IA pour réseaux d’entreprise." },
+        "projet2": { "image": "../../img/projets/cyberTraining.png", "texte": "Programme de sensibilisation et formation interactive à la cybersécurité pour les employés." },
+        "projet3": { "image": "../../img/projets/cyberCrypto.png", "texte": "Plateforme de cryptographie avancée pour sécuriser les données sensibles dans le cloud et sur site." }
+      }
+    ]
+  }
+]
