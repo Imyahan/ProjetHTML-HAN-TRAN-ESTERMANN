@@ -77,6 +77,7 @@
 
 #descriptionDomaine{
     height: 450px;
+    text-align: justify;
 }
 
 #logoDomaine {
@@ -150,6 +151,7 @@ button:hover{
 
 #biographie {
     height:250px;
+    text-align: justify;
 }
 
 /* ---------------- Projets ---------------- */
@@ -180,4 +182,73 @@ button:hover{
 .card-projet:hover {
     transform: translateY(-4px);
     box-shadow:  0 8px 20px rgba(0,0,0,.12), 0 12px 30px rgba(0,0,0,.15);
+}
+
+/* ---------------- Media Queries ---------------- */
+
+@media (max-width: 1024px) {
+
+    .titreClassique {
+        padding-left: 20px;
+    }
+
+    #biographie,
+    #descriptionDomaine {
+        grid-template-columns: 1fr;
+        font-size: 18px;
+        height: auto;
+    }
+
+    #biographie p,
+    #descriptionDomaine p {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .Nos_equipes {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .Nos_equipes div {
+        padding: 20px;
+    }
+
+    .Nos_equipes div:hover {
+        transform: scale(1.1);
+    }
+
+    #titreDomaine {
+        padding-left: 60px;
+        padding-right: 60px;
+        margin-top: 30px;
+    }
+
+    #logoDomaine {
+        width: 300px;
+        height: 300px;
+    }
+
+    #dedicace {
+        grid-template-columns: 5% 45% 45% 5%;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    #dedicace #légende {
+        width: auto;
+        height: auto;
+        padding: 25px;
+    }
+
+    button {
+        margin-top: 120px;
+        margin-left: 20px;
+        height: 45px;
+        width: 45px;
+    }
+
+    #projets img{
+        max-width: 75%;
+    }
 }
