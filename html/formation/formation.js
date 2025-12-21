@@ -105,14 +105,17 @@ document.addEventListener("DOMContentLoaded", function () {
   function afficherDetails(detailsProg) {
     if (!detailsProg) return;
     document.getElementById("titreGauche").textContent =
-      detailsProg[0].formation1;
-    document.querySelectorAll(".descriptionGauche")[0].textContent =
-      detailsProg[0].descProg1;
-
+    detailsProg[0].formation1;
+    document.querySelectorAll(".descriptionGauche")[0].innerHTML = `
+      <p>${detailsProg[0].descProg1}</p>
+      <p class="objectifs">💡 Objectifs : ${detailsProg[0].objProg1}</p>
+    `;
     document.getElementById("titreDroite").textContent =
-      detailsProg[1].formation2;
-    document.querySelectorAll(".descriptionGauche")[1].textContent =
-      detailsProg[1].descProg2;
+    detailsProg[1].formation2;
+    document.querySelectorAll(".descriptionGauche")[1].innerHTML = `
+    <p>${detailsProg[1].descProg2}</p>
+    <p class="objectifs">💡 Objectifs : ${detailsProg[1].objProg2}</p>
+    `;
   }
 
   // Majeures Programme Grande École

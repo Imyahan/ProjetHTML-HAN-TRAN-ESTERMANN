@@ -5,11 +5,13 @@
     "détailsProg": [
       {
         "formation1":"Prépa Intégré",
-        "descProg1":"Ce cycle en deux ans prépare nos étudiants en combinant formation scientifique et technique avec une formation générale et professionnelle de l’ingénieur."
+        "descProg1":"Ce cycle en deux ans prépare nos étudiants en combinant formation scientifique et technique avec une formation générale et professionnelle de l’ingénieur.",
+        "objProg1":"Offrir un socle scientifique et technique solide, Préparer les étudiants à poursuivre leurs études en cycle ingénieur, Développer une culture générale de l’ingénieur."
       },
       {
         "formation2":"Cycle ingénieur",
-        "descProg2":"Le cycle ingénieur, permet pendant au moins trois ans (quatre si réalisation d’un double-diplôme) à chaque étudiant, en accord avec ses projets personnels et professionnels, de choisir son parcours de formation parmi les 4 filières proposées par l’école (Information Technology, Sécurité et Réseaux, Data Science, Systèmes Embarqués)."
+        "descProg2":"Le cycle ingénieur, permet pendant au moins trois ans (quatre si réalisation d’un double-diplôme) à chaque étudiant, en accord avec ses projets personnels et professionnels, de choisir son parcours de formation parmi les 4 filières proposées par l’école (Information Technology, Sécurité et Réseaux, Data Science, Systèmes Embarqués).",
+        "objProg2":"Former des ingénieurs compétents, novateurs et engagés, curieux des usages des technologies, acteurs responsables de la transformation numérique des entreprises."
       }
     ],
     "filières": [
@@ -110,12 +112,13 @@
     "détailsProg": [
       {
         "formation1":"BTS SIO",
-        "descProg1":"Le BTS Services Informatiques aux Organisations (SIO) est une formation de 2 ans pour devenir professionnel de l’informatique. Il aborde le développement, la gestion de réseaux et la sécurité informatique et permet de nombreuses opportunités de carrière dans le domaine de l’IT."
+        "descProg1":"Le BTS Services Informatiques aux Organisations (SIO) est une formation de 2 ans pour devenir professionnel de l’informatique. Il aborde le développement, la gestion de réseaux et la sécurité informatique et permet de nombreuses opportunités de carrière dans le domaine de l’IT.",
+        "objProg1":"Le Technicien supérieur informatique participe à la production et à la fourniture de services informatiques au sein d’une organisation. Il peut exercer comme collaborateur interne ou comme intervenant pour une entreprise de services du numérique, un éditeur de logiciels ou une société de conseil en technologies."
       },
       {
         "formation2":"Bachelor",
-        "descProg2":"Le Bachelor Informatique, diplôme de grade licence, est construit sur un solide socle scientifique qui permet aux étudiants de maîtriser les technologies de pointe en programmation et de développer des applications performantes."
-      }
+        "descProg2":"Le Bachelor Informatique, diplôme de grade licence, est construit sur un solide socle scientifique qui permet aux étudiants de maîtriser les technologies de pointe en programmation et de développer des applications performantes.",
+        "objProg2":"Les bachelors offrent une formation professionnalisante et polyvalente en informatique. Ils allient maîtrise technique, compréhension des besoins métiers, respect des normes, de la sécurité et des contraintes économiques, tout en intégrant des notions de management, d’agilité et de conception responsable du numérique."      }
     ],
     "filières": [
       {
