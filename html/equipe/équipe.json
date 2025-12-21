@@ -2,7 +2,7 @@
   {
     "nom": "Alexis",
     "role": "Coordinateur solutions cloud",
-    "equipe": "cloudComputing",
+    "département": "cloudComputing",
     "role_description": "Alexis travaille sur la conception de solutions cloud adaptées aux besoins des entreprises. Il élabore des architectures complexes tout en veillant à la cohérence technique et à la scalabilité des systèmes. Sa mission principale est de garantir que les solutions cloud soient fiables, performantes et adaptées aux usages de chaque équipe, tout en facilitant la transition vers le numérique et en optimisant les processus existants pour une meilleure efficacité opérationnelle.",
     "mission": "Il accompagne les équipes dans la migration vers le cloud, propose des stratégies pour sécuriser les données et s’assure que chaque projet respecte les standards de qualité et les délais impartis. Il coordonne les différentes parties prenantes pour que l’intégration des solutions soit fluide et que l’expérience utilisateur soit optimale, tout en anticipant les évolutions technologiques pour maintenir les systèmes à la pointe de l’innovation.",
     "citation": "Le cloud permet de connecter les idées et les équipes de manière fluide. Chaque projet est une occasion de transformer la complexité en simplicité."
@@ -10,7 +10,7 @@
   {
     "nom": "Brice",
     "role": "Concepteur d’algorithmes intelligents",
-    "equipe": "intelligenceArtificielle",
+    "département": "intelligenceArtificielle",
     "role_description": "Brice explore de nouvelles approches algorithmiques pour améliorer la prise de décision automatisée. Il développe des modèles qui interprètent les données complexes tout en restant compréhensibles par l’utilisateur final. Son travail combine expertise mathématique, maîtrise des technologies de l’IA et sens de l’innovation pour créer des solutions robustes et fiables.",
     "mission": "Il teste, ajuste et optimise chaque algorithme pour qu’il réponde aux besoins spécifiques des projets tout en garantissant précision et performance. Brice collabore avec les équipes métier pour s’assurer que les modèles produits sont pertinents et exploitables, et documente les méthodes pour rendre les systèmes intelligents transparents et auditables.",
     "citation": "L’intelligence artificielle ouvre des perspectives infinies pour résoudre des problèmes complexes. Chaque algorithme que je crée raconte une histoire sur les données et leur potentiel."
@@ -18,7 +18,7 @@
   {
     "nom": "Christophe",
     "role": "Responsable infrastructures cloud",
-    "equipe": "cloudComputing",
+    "département": "cloudComputing",
     "role_description": "Christophe supervise la mise en place d’infrastructures cloud performantes et sécurisées. Il coordonne les équipes techniques pour installer et maintenir les systèmes, en veillant à leur disponibilité et à leur fiabilité. Son rôle implique de gérer les ressources, d’assurer la maintenance préventive et de suivre les meilleures pratiques du secteur.",
     "mission": "Il surveille les performances, ajuste les configurations et met en œuvre des solutions innovantes pour optimiser les infrastructures. Christophe anticipe les besoins futurs, planifie la montée en charge des systèmes et coordonne les réponses aux incidents afin de garantir un fonctionnement continu et sécurisé des services cloud.",
     "citation": "Une infrastructure solide est la clé pour des services fiables et performants. Je m’assure que chaque système fonctionne avec précision et sécurité."
@@ -26,7 +26,7 @@
   {
     "nom": "Danielle",
     "role": "Analyste communication et données",
-    "equipe": "bigData",
+    "département": "bigData",
     "role_description": "Danielle étudie comment les données peuvent améliorer la communication et la compréhension des usages. Elle collecte, analyse et interprète des ensembles de données complexes pour en tirer des insights pertinents. Son rôle combine la maîtrise des outils analytiques et la capacité à raconter une histoire compréhensible à partir des chiffres.",
     "mission": "Elle transforme ces analyses en recommandations stratégiques et en plans d’action pour les équipes. Danielle développe des rapports détaillés, des visualisations et des dashboards qui facilitent la prise de décision et favorisent une meilleure compréhension des comportements des utilisateurs et des tendances du marché.",
     "citation": "Les données racontent des histoires invisibles au premier regard. Comprendre ces récits permet de mieux communiquer et d’agir avec pertinence."
@@ -34,7 +34,7 @@
   {
     "nom": "Enora",
     "role": "Exploratrice de données",
-    "equipe": "bigData",
+    "département": "bigData",
     "role_description": "Enora aime fouiller dans de grands ensembles de données pour en révéler des tendances cachées. Elle utilise des outils d’analyse avancés et des techniques statistiques pour détecter des motifs que l’œil nu ne pourrait identifier. Sa rigueur et son sens de l’observation permettent de transformer les données brutes en informations stratégiques.",
     "mission": "Elle participe à des projets de visualisation et d’analyse exploratoire, créant des dashboards interactifs et des rapports complets pour que les équipes puissent prendre des décisions éclairées. Enora veille à ce que chaque découverte soit exploitée efficacement pour améliorer les processus et anticiper les évolutions du marché.",
     "citation": "Chaque donnée cache un indice sur le monde qui nous entoure. Mon travail consiste à révéler ces motifs et à les rendre compréhensibles."
@@ -42,7 +42,7 @@
   {
     "nom": "Etienne",
     "role": "Spécialiste protection numérique",
-    "equipe": "cyberdéfense",
+    "département": "cyberdéfense",
     "role_description": "Étienne travaille sur la sécurisation des systèmes informatiques et l’anticipation des menaces. Il évalue les risques, implémente des solutions de protection et forme les équipes à adopter des comportements sécurisés. Son expertise technique et sa vigilance constante garantissent que les systèmes restent protégés face aux attaques évolutives.",
     "mission": "Il met en place des protocoles de sécurité, teste les infrastructures et veille à la conformité des pratiques avec les standards. Étienne s’assure que chaque utilisateur comprend les enjeux de la cybersécurité et que les données sensibles sont protégées contre toute intrusion ou exploitation malveillante.",
     "citation": "La sécurité numérique n’est pas seulement technique, elle est essentielle pour la confiance. J’œuvre pour que chacun comprenne et maîtrise les risques informatiques."
@@ -50,7 +50,7 @@
   {
     "nom": "Faten",
     "role": "Analyste impacts de l’IA",
-    "equipe": "intelligenceArtificielle",
+    "département": "intelligenceArtificielle",
     "role_description": "Faten étudie les effets de l’intelligence artificielle sur les usages et les organisations. Elle analyse les implications éthiques, techniques et sociales des systèmes d’IA, en combinant recherche académique et retours d’expérience des équipes terrain. Son travail vise à comprendre les impacts réels des technologies émergentes.",
     "mission": "Elle élabore des recommandations pour intégrer l’IA de manière responsable, optimisant les processus tout en minimisant les risques pour les utilisateurs et l’organisation. Faten sensibilise les équipes aux enjeux de l’IA et propose des solutions concrètes pour un déploiement sûr et efficace.",
     "citation": "L’intelligence artificielle transforme nos habitudes et nos métiers. Je cherche à en comprendre l’impact pour mieux guider son utilisation."
@@ -58,7 +58,7 @@
   {
     "nom": "Fériel",
     "role": "Stratège en cyberdéfense",
-    "equipe": "cyberdéfense",
+    "département": "cyberdéfense",
     "role_description": "Fériel conçoit des stratégies de défense face aux cyberattaques et assure la protection des infrastructures critiques. Elle analyse les menaces potentielles, évalue les vulnérabilités et définit des plans de réaction adaptés. Son expertise repose sur l’anticipation et la planification de scénarios complexes.",
     "mission": "Elle met en place des procédures, forme les équipes et teste les systèmes pour garantir une réponse rapide et efficace en cas d’attaque. Fériel coordonne les efforts de protection et veille à ce que la cybersécurité soit intégrée dans tous les aspects opérationnels de l’organisation.",
     "citation": "La cybersécurité demande vigilance et anticipation. Chaque menace est une opportunité de renforcer la protection des systèmes."
@@ -66,7 +66,7 @@
   {
     "nom": "Florent",
     "role": "Architecte données",
-    "equipe": "bigData",
+    "département": "bigData",
     "role_description": "Florent structure et organise les flux de données pour les rendre exploitables. Il conçoit des systèmes capables de traiter de grands volumes d’informations en temps réel, en garantissant la cohérence, la fiabilité et la performance. Son expertise permet de transformer des données brutes en informations stratégiques pour l’organisation.",
     "mission": "Il crée des pipelines de données, implémente des outils de traitement et veille à la qualité des flux. Florent collabore avec les équipes pour adapter les structures aux besoins métier et anticiper l’évolution des volumes de données afin d’optimiser la prise de décision.",
     "citation": "Les données sont comme des rivières qu’il faut canaliser. Mon rôle est de construire des structures claires pour qu’elles irriguent l’information efficacement."
@@ -74,7 +74,7 @@
   {
     "nom": "Léa",
     "role": "Développeuse solutions IA",
-    "equipe": "intelligenceArtificielle",
+    "département": "intelligenceArtificielle",
     "role_description": "Léa développe des solutions basées sur l’intelligence artificielle pour automatiser des tâches complexes. Elle transforme des concepts abstraits en applications concrètes et veille à la fiabilité et la performance de ses systèmes. Sa créativité et sa maîtrise technique lui permettent de résoudre des problématiques variées et innovantes.",
     "mission": "Elle implémente, teste et optimise les algorithmes tout en s’assurant que les solutions répondent aux besoins des utilisateurs. Léa collabore avec les équipes pour intégrer l’IA dans les processus métier et veille à ce que les outils soient intuitifs et efficaces.",
     "citation": "Créer de l’IA, c’est transformer des concepts en solutions tangibles. Chaque projet est un défi à relever avec précision et créativité."
@@ -82,7 +82,7 @@
   {
     "nom": "Lucile",
     "role": "Ingénieure automatisation cloud",
-    "equipe": "cloudComputing",
+    "département": "cloudComputing",
     "role_description": "Lucile conçoit des outils pour automatiser le déploiement et la gestion des services cloud. Elle développe des scripts, des pipelines et des systèmes pour garantir que les processus soient fiables, rapides et reproductibles. Sa rigueur et son expertise permettent de réduire les erreurs humaines et d’améliorer l’efficacité globale des opérations cloud.",
     "mission": "Elle teste les solutions, optimise les workflows et veille à la compatibilité avec les infrastructures existantes. Lucile s’assure que chaque service fonctionne de manière fluide et sécurisée, et accompagne les équipes dans l’adoption des outils automatisés pour maximiser la productivité.",
     "citation": "L’automatisation simplifie la vie des équipes et des entreprises. Je m’assure que chaque service fonctionne de manière fluide et fiable."
@@ -90,7 +90,7 @@
   {
     "nom": "Meunier",
     "role": "Pilote innovation data",
-    "equipe": "bigData",
+    "département": "bigData",
     "role_description": "Meunier pilote des projets d’innovation centrés sur l’exploitation des données. Il identifie les opportunités, coordonne les équipes et définit les orientations stratégiques. Son rôle est de transformer les données en idées exploitables et de stimuler l’innovation à travers des projets concrets et impactants.",
     "mission": "Il accompagne les équipes dans l’implémentation de solutions innovantes, supervise la qualité des analyses et s’assure que les résultats sont alignés avec les objectifs de l’organisation. Meunier met en place des méthodologies pour capitaliser sur les connaissances et anticiper les évolutions du marché.",
     "citation": "L’innovation naît de la curiosité et de l’audace. Mon objectif est de transformer les données en idées et en actions concrètes."
@@ -98,7 +98,7 @@
   {
     "nom": "Nina",
     "role": "Analyste risques numériques",
-    "equipe": "cyberdéfense",
+    "département": "cyberdéfense",
     "role_description": "Nina analyse les risques numériques pour renforcer la sécurité des systèmes. Elle identifie les vulnérabilités, évalue les menaces et propose des solutions pour prévenir les incidents. Sa vigilance et sa méthodologie assurent que l’organisation reste protégée face aux évolutions constantes du cyberespace.",
     "mission": "Elle élabore des plans de prévention, teste les scénarios d’attaque et forme les équipes aux bonnes pratiques. Nina anticipe les menaces, assure le suivi des incidents et veille à ce que toutes les mesures de sécurité soient mises en œuvre efficacement pour minimiser les risques.",
     "citation": "Identifier les risques numériques est essentiel pour protéger les systèmes. Mon travail consiste à anticiper et à prévenir les menaces avant qu’elles n’impactent l’organisation."

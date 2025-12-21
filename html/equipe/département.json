@@ -13,9 +13,21 @@
     ],
     "projets": [
       {
-        "projet1": { "image": "../../img/projets/cloudMigration.png", "texte": "Plateforme de migration automatisée vers le cloud pour PME, réduisant les coûts et les temps d’arrêt." },
-        "projet2": { "image": "../../img/projets/serverlessAI.png", "texte": "Intégration d’architectures serverless avec modules d’intelligence artificielle pour traitement temps réel des données." },
-        "projet3": { "image": "../../img/projets/cloudMonitoring.png", "texte": "Outil de supervision avancé pour assurer la résilience et la sécurité des infrastructures cloud multi-régions." }
+        "projet1": {
+          "titre": "CloudShift",
+          "image": "../../img/projets/cloudMigration.jpg",
+          "texte": "Plateforme de migration automatisée vers le cloud, réduisant les coûts et les temps d’arrêt."
+        },
+        "projet2": {
+          "titre": "Serverless Intelligence Engine",
+          "image": "../../img/projets/serverlessAI.jpg",
+          "texte": "Intégration d’architectures serverless avec modules d’intelligence artificielle pour traitement temps réel des données."
+        },
+        "projet3": {
+          "titre": "MultiCloud Sentinel",
+          "image": "../../img/projets/cloudMonitoring.jpg",
+          "texte": "Outil de supervision avancé pour assurer la résilience et la sécurité des infrastructures cloud multi-régions."
+        }
       }
     ]
   },
@@ -33,9 +45,21 @@
     ],
     "projets": [
       {
-        "projet1": { "image": "../../img/projets/iaPredictive.png", "texte": "Système prédictif pour la maintenance industrielle utilisant apprentissage supervisé et analyse de capteurs." },
-        "projet2": { "image": "../../img/projets/iaEthique.png", "texte": "Plateforme d’IA explicable permettant d’évaluer les décisions automatisées et d’assurer la transparence." },
-        "projet3": { "image": "../../img/projets/iaChatbot.png", "texte": "Assistant virtuel intelligent capable de comprendre et de répondre à des demandes complexes en langage naturel." }
+        "projet1": {
+          "titre": "PredictaMaint",
+          "image": "../../img/projets/iaPredictive.jpg",
+          "texte": "Système prédictif pour la maintenance industrielle utilisant apprentissage supervisé et analyse de capteurs."
+        },
+        "projet2": {
+          "titre": "ExplainIA",
+          "image": "../../img/projets/iaEthique.png",
+          "texte": "Plateforme d’IA explicable permettant d’évaluer les décisions automatisées et d’assurer la transparence."
+        },
+        "projet3": {
+          "titre": "Cognitiva Chat",
+          "image": "../../img/projets/iaChatbot.jpg",
+          "texte": "Assistant virtuel intelligent capable de comprendre et de répondre à des demandes complexes en langage naturel."
+        }
       }
     ]
   },
@@ -53,9 +77,21 @@
     ],
     "projets": [
       {
-        "projet1": { "image": "../../img/projets/bigDataPipeline.png", "texte": "Pipeline de traitement temps réel pour analyser des flux de données IoT." },
-        "projet2": { "image": "../../img/projets/bigDataDashboard.png", "texte": "Tableau de bord interactif de visualisation de données pour les équipes métier." },
-        "projet3": { "image": "../../img/projets/bigDataAnalytics.png", "texte": "Système d’analyse prédictive combinant Big Data et Machine Learning pour l’optimisation des processus." }
+        "projet1": {
+          "titre": "StreamPulse",
+          "image": "../../img/projets/bigDataPipeline.jpeg",
+          "texte": "Pipeline de traitement temps réel pour analyser des flux de données IoT."
+        },
+        "projet2": {
+          "titre": "DataVision",
+          "image": "../../img/projets/bigDataDashboard.png",
+          "texte": "Tableau de bord interactif de visualisation de données pour les équipes métier."
+        },
+        "projet3": {
+          "titre": "InsightForge",
+          "image": "../../img/projets/bigDataAnalytics.jpg",
+          "texte": "Système d’analyse prédictive combinant Big Data et Machine Learning pour l’optimisation des processus."
+        }
       }
     ]
   },
@@ -73,9 +109,21 @@
     ],
     "projets": [
       {
-        "projet1": { "image": "../../img/projets/cyberThreatDetection.png", "texte": "Système de détection d’attaques en temps réel basé sur l’IA pour réseaux d’entreprise." },
-        "projet2": { "image": "../../img/projets/cyberTraining.png", "texte": "Programme de sensibilisation et formation interactive à la cybersécurité pour les employés." },
-        "projet3": { "image": "../../img/projets/cyberCrypto.png", "texte": "Plateforme de cryptographie avancée pour sécuriser les données sensibles dans le cloud et sur site." }
+        "projet1": {
+          "titre": "CyberShield AI",
+          "image": "../../img/projets/cyberThreatDetection.jpeg",
+          "texte": "Système de détection d’attaques en temps réel basé sur l’IA pour réseaux d’entreprise."
+        },
+        "projet2": {
+          "titre": "SecureMind",
+          "image": "../../img/projets/cyberTraining.png",
+          "texte": "Programme de sensibilisation et formation interactive à la cybersécurité pour les employés."
+        },
+        "projet3": {
+          "titre": "CryptoVault",
+          "image": "../../img/projets/cyberCrypto.jpg",
+          "texte": "Plateforme de cryptographie avancée pour sécuriser les données sensibles dans le cloud et sur site."
+        }
       }
     ]
   }

@@ -1,0 +1,23 @@
+[
+  {
+    "projets": [
+      {
+        "projet1": {
+          "titre": "CyberShield AI",
+          "image": "../../img/projets/cyberThreatDetection.jpeg",
+          "texte": "Système de détection d’attaques en temps réel basé sur l’IA pour réseaux d’entreprise."
+        },
+        "projet2": {
+          "titre": "SecureMind",
+          "image": "../../img/projets/cyberTraining.png",
+          "texte": "Programme de sensibilisation et formation interactive à la cybersécurité pour les employés."
+        },
+        "projet3": {
+          "titre": "CryptoVault",
+          "image": "../../img/projets/cyberCrypto.jpg",
+          "texte": "Plateforme de cryptographie avancée pour sécuriser les données sensibles dans le cloud et sur site."
+        }
+      }
+    ]
+  }
+]

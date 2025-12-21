@@ -35,6 +35,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     text-align: center;
+    cursor: pointer;
 }
 
 .Nos_equipes img{
@@ -132,10 +133,13 @@ button{
     background-color: rgba(255, 255, 255, 0.75);
     border-radius: 100%;
     border:none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 button:hover{
     background-color: rgb(255, 255, 255);
+    box-shadow:  0 8px 20px rgba(0,0,0,.12), 0 12px 30px rgba(0,0,0,.15);
 }
 
 /* ---------------- Qui sommes-nous ? ---------------- */
@@ -159,16 +163,21 @@ button:hover{
     padding-top:50px;
 }
 
-.projets{
+#projets{
     padding:30px; 
     display:grid; 
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); 
     gap:24px; 
 }
       
-.card { 
+.card-projet { 
     background-color: white;
     border-radius:16px; 
     padding:16px; 
-    box-shadow:0 4px 10px rgba(0,0,0,.06); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-projet:hover {
+    transform: translateY(-4px);
+    box-shadow:  0 8px 20px rgba(0,0,0,.12), 0 12px 30px rgba(0,0,0,.15);
 }
