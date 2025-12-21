@@ -34,7 +34,7 @@ section{
     box-shadow:  0 8px 20px rgba(0,0,0,.12), 0 12px 30px rgba(0,0,0,.15);
 }
 
-/* Programmes */
+/* ---------------- Programmes ---------------- */
         
 #programmes { 
     border-radius: 25px; 
@@ -59,7 +59,7 @@ section{
 }
 
 #programmes > div {
-   transition: transform 0.3s ease
+    transition: transform 0.3s ease
 }
 
 #programmes > div:hover {
@@ -67,7 +67,7 @@ section{
    box-shadow: 0 8px 20px rgba(0,0,0,.12), 0 12px 30px rgba(0,0,0,.15);
 }
 
-/* Détails Programme */
+/* ---------------- Détails Programme ---------------- */
  
 #détails {
     display: flex;
@@ -75,13 +75,19 @@ section{
     gap: 15px;
     grid-template-columns: 50% 50%;
     font-size: 20px;
-    padding: 50px;
+    padding: 10px;
     border-radius: 25px;
     background-color: #163666; 
     color: white;
+    text-align: justify;
 }
 
-/* Majeures Header */
+#détails > div {
+    flex: 1;           
+    padding: 20px;
+}
+
+/* ---------------- Majeures Header ---------------- */
 
 #titreMajeure{
     color:#163666;
@@ -149,7 +155,7 @@ section{
     pointer-events: auto;
 }
 
-/* Majeures Stats Section */
+/* ---------------- Majeures Stats Section ---------------- */
 
 #statsSection {
     display: grid;
@@ -170,7 +176,7 @@ section{
     font-weight: bold;
 }
 
-/* Majeures Body */
+/* ---------------- Majeures Body ---------------- */
 
 #majeures .body {
     display: grid;
@@ -205,6 +211,10 @@ section{
     flex: 1; 
 }
 
+.section h2{
+    color:#FE45B8;
+}
+
 button {
     height: 40px;
     width: 40px;
@@ -221,15 +231,35 @@ button:hover {
     border-color: white;
 }
 
-/* Autres Infos Section */
+.descriptionMajeure {
+    font-size: larger;
+    text-align: justify;
+}
 
-#autres{
-    font-size: x-large;
-    padding-left: 0;
+.debouchesMajeure {
+    padding: 15px;
+    margin-top: 10px; 
+    font-size: small;
+    font-style: italic;
+}
+
+/* ---------------- Autres Infos Section ---------------- */
+
+.dropdown-content {
+    display: none;
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+.dropdown-parent {
     cursor: pointer;
 }
 
-/* Projets Etudiants */
+.dropdown-parent.active > .dropdown-content {
+    display: block;
+}
+
+/* ---------------- Projets Etudiants ---------------- */
 
 #projetsEtudiants{
     background-color: #163666;
@@ -238,4 +268,19 @@ button:hover {
 
 .card-projet{
     background-color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* ---------------- Media Queries ---------------- */
+
+@media (max-width: 1024px) {
+    #détails > div { flex: 1 1 100%; }
+    #projets, .majeure { grid-template-columns: repeat(auto-fit,minmax(180px,1fr)); }
+    .card-majeure, .card-projet { padding:12px; }
+    .card-projet img {
+        max-width: 75%;
+        max-height:auto;
+    }
 }
