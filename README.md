@@ -18,32 +18,33 @@ Celui-ci devait obligatoirement comporter :
 
 ## Pages conçues :
 
-### accueil.html
+- ### accueil.html
 La page d'accueil de notre projet web.
 
-### contact.html
+- ### contact.html
 Cette page consiste en un formulaire pour prendre contact avec les membres du projet.
 
-### cours.html
+- ### cours.html
 Sur cette page-ci, vous trouverez les emplois du temps des professeurs du département.
 
-### equipe.html
+- ### equipe.html
 On retrouve sur cett page l'ensemble des départements du service informatique et ses équipes.
 
-### formation.html
+- ### formation.html
 Cette page présente les programmes informatiques proposés à l'Efrei.
 
-### partenaire.html
+- ### partenaire.html
 Est listé sur cette page les entreprises partenaires ou les secteurs qui recrutent les diplômés de l'Efreu.
 
-### campusetvie.html
+- ### campusetvie.html
 Une page relative à la vie étudiante et au campus.
 
-### a_propos.html
+- ### a_propos.html
 Cette page contient les noms des étudiants membres du projet ainsi qu'une courte présentation du travail réalisé par chaque membre.
 
 ---
 
 ## Exécution
+
 
 
