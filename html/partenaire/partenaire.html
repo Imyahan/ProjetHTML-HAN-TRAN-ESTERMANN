@@ -11,96 +11,99 @@
 
 <body>
 
-<nav>
-    <a href="index.html">
-        <img src="../../img/logo1.png" alt="Efrei" class="logo">
-    </a>
-    <div class="nav-links">
-        <a href="../accueil/accueil.html">Accueil</a>
-        <a href="../formation/formation.html">Formations</a>
-        <a href="../equipe/equipe.html">Équipe pédagogique</a>
-        <a href="../cours/cours.html">Cours</a>
-    </div>
-</nav>
-
-<header class="hero">
-    <h1>Nos entreprises partenaires</h1>
-    <p>
-        L’Efrei travaille avec plus de <strong>2 000 entreprises</strong> afin d’accompagner
-        les étudiants vers l’emploi et les métiers du numérique.
-    </p>
+<header>
+    <nav>
+        <a href="index.html"><img src="../../img/logo1.png" alt="logo1" class="logo"></a>
+        <div class="nav-links">
+            <a href="../accueil/accueil.html">Accueil</a>
+            <a href="../formation/formation.html">Formation</a>
+            <a href="../equipe/equipe.html">Equipe</a>
+            <a href="../cours/cours.html">Cours</a>
+            <a href="../vie_etu/campusetvie.html">Vie Étudiante</a>
+        </div>
+    </nav>
 </header>
 
-<section class="stats section">
-    <div class="stat">
-        <span data-count="2000">0</span>
-        <p>Entreprises partenaires</p>
-    </div>
-    <div class="stat">
-        <span data-count="36">0</span>
-        <p>Entreprises marraines</p>
-    </div>
-    <div class="stat">
-        <span data-count="10">0</span>
-        <p>Chaires d’enseignement</p>
-    </div>
-</section>
+<main>
+    <section class="hero">
+        <h1>Nos entreprises partenaires</h1>
+        <p>
+            L’Efrei travaille avec plus de <strong>2 000 entreprises</strong> afin d’accompagner
+            les étudiants vers l’emploi et les métiers du numérique.
+        </p>
+    </section>
 
-<section class="filter section">
-    <button class="active" data-filter="all">Toutes</button>
-    <button data-filter="tech">Technologies</button>
-    <button data-filter="finance">Finance</button>
-    <button data-filter="industrie">Industrie</button>
-</section>
+    <section class="stats section">
+        <div class="stat">
+            <span data-count="2000">0</span>
+            <p>Entreprises partenaires</p>
+        </div>
+        <div class="stat">
+            <span data-count="36">0</span>
+            <p>Entreprises marraines</p>
+        </div>
+        <div class="stat">
+            <span data-count="10">0</span>
+            <p>Chaires d’enseignement</p>
+        </div>
+    </section>
 
-<section class="partners section">
-    <div class="partner tech">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
-             alt="Microsoft" onerror="this.style.display='none'">
-        <h3>Microsoft</h3>
-    </div>
+    <section class="filter section">
+        <button class="active" data-filter="all">Toutes</button>
+        <button data-filter="tech">Technologies</button>
+        <button data-filter="finance">Finance</button>
+        <button data-filter="industrie">Industrie</button>
+    </section>
 
-    <div class="partner tech">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Cloud_logo.svg"
-             alt="Google Cloud">
-        <h3>Google Cloud</h3>
-    </div>
+    <section class="partners section">
+        <div class="partner tech">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
+                alt="Microsoft" onerror="this.style.display='none'">
+            <h3>Microsoft</h3>
+        </div>
 
-    <div class="partner finance">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Soci%C3%A9t%C3%A9_G%C3%A9n%C3%A9rale.png"
-             alt="Société Générale">
-        <h3>Société Générale</h3>
-    </div>
+        <div class="partner tech">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Cloud_logo.svg"
+                alt="Google Cloud">
+            <h3>Google Cloud</h3>
+        </div>
 
-    <div class="partner industrie">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Thales_Logo.svg"
-             alt="Thales">
-        <h3>Thales</h3>
-    </div>
+        <div class="partner finance">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Soci%C3%A9t%C3%A9_G%C3%A9n%C3%A9rale.png"
+                alt="Société Générale">
+            <h3>Société Générale</h3>
+        </div>
 
-    <div class="partner industrie">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Renault_logo.jpg"
-             alt="Renault">
-        <h3>Renault</h3>
-    </div>
-</section>
+        <div class="partner industrie">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Thales_Logo.svg"
+                alt="Thales">
+            <h3>Thales</h3>
+        </div>
 
-<section class="careers-jobs-section section">
-    <h3>Débouchés professionnels après l’Efrei</h3>
+        <div class="partner industrie">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Renault_logo.jpg"
+                alt="Renault">
+            <h3>Renault</h3>
+        </div>
+    </section>
 
-    <div class="jobs-buttons">
-        <button class="job-btn active" data-job="devops">Ingénieur DevOps</button>
-        <button class="job-btn" data-job="data">Data Scientist</button>
-        <button class="job-btn" data-job="software">Ingénieur logiciel</button>
-        <button class="job-btn" data-job="scrum">Scrum Master</button>
-        <button class="job-btn" data-job="cloud">Architecte Cloud</button>
-        <button class="job-btn" data-job="consultant">Consultant IT</button>
-        <button class="job-btn" data-job="pm">Chef de projet numérique</button>
-        <button class="job-btn" data-job="cyber">Ingénieur cybersécurité</button>
-    </div>
+    <section class="careers-jobs-section section">
+        <h3>Débouchés professionnels après l’Efrei</h3>
 
-    <div class="job-stats-wrapper"></div>
-</section>
+        <div class="jobs-buttons">
+            <button class="job-btn active" data-job="devops">Ingénieur DevOps</button>
+            <button class="job-btn" data-job="data">Data Scientist</button>
+            <button class="job-btn" data-job="software">Ingénieur logiciel</button>
+            <button class="job-btn" data-job="scrum">Scrum Master</button>
+            <button class="job-btn" data-job="cloud">Architecte Cloud</button>
+            <button class="job-btn" data-job="consultant">Consultant IT</button>
+            <button class="job-btn" data-job="pm">Chef de projet numérique</button>
+            <button class="job-btn" data-job="cyber">Ingénieur cybersécurité</button>
+        </div>
+
+        <div class="job-stats-wrapper"></div>
+    </section>
+</main>
 
 <footer>
     <section class="footer-links">
