@@ -1,11 +1,11 @@
 # Projet de programmation WEB
 
-Le projet a consisté à créer un site vitrine Web du département d’Informatique de l’EFREI.
+Ce projet consistait à créer un site vitrine pour le département d’Informatique de l’EFREI, dans le cadre d’un projet pédagogique. L’objectif était de proposer une interface web informative.
 
-Celui-ci devait obligatoirement comporter :
-- Une page d’accueil permettant de naviguer vers les autres pages du site ;
-- Une page de type « à propos » ;
-- Un contenu principal, composé de diverses sections répartis sur plusieurs pages.
+Le site devait obligatoirement inclure :
+- Une page d’accueil permettant de naviguer vers les autres sections ;
+- Une page "À propos" présentant l’équipe et le projet ;
+- Un contenu principal organisé en plusieurs sections réparties sur différentes pages.
 
 ---
 
@@ -18,33 +18,34 @@ Celui-ci devait obligatoirement comporter :
 
 ## Pages conçues :
 
-- ### accueil.html
-La page d'accueil de notre projet web.
+- accueil.html : Page d’accueil avec navigation vers les autres sections.
 
-- ### contact.html
-Cette page consiste en un formulaire pour prendre contact avec les membres du projet.
+- contact.html : Formulaire pour contacter les membres du projet.
 
-- ### cours.html
-Sur cette page-ci, vous trouverez les emplois du temps des professeurs du département.
+- cours.html : Emplois du temps des professeurs du département.
 
-- ### equipe.html
-On retrouve sur cett page l'ensemble des départements du service informatique et ses équipes.
+- equipe.html : Présentation des départements et des équipes du service informatique.
 
-- ### formation.html
-Cette page présente les programmes informatiques proposés à l'Efrei.
+- formation.html : Informations sur les programmes informatiques proposés à l’EFREI.
 
-- ### partenaire.html
-Est listé sur cette page les entreprises partenaires ou les secteurs qui recrutent les diplômés de l'Efreu.
+- partenaire.html : Liste des entreprises partenaires et secteurs recrutant les diplômés.
 
-- ### campusetvie.html
-Une page relative à la vie étudiante et au campus.
+- campusetvie.html : Informations sur la vie étudiante et le campus.
 
-- ### a_propos.html
-Cette page contient les noms des étudiants membres du projet ainsi qu'une courte présentation du travail réalisé par chaque membre.
+- a_propos.html : Présentation de l’équipe et description du rôle de chaque membre dans le projet.
 
 ---
 
 ## Exécution
+
+Pour exécuter correctement le projet, il est recommandé d’utiliser Live Server, afin que les fichiers JSON soient correctement interprétés par le site.
+
+1. Installer l’extension Live Server sur votre éditeur (ex. VS Code).
+
+2. Ouvrir le projet dans l’éditeur et lancer le serveur via Live Server.
+
+3. Accéder au site via le navigateur à l’URL indiquée par l’extension.
+
 
 
 
