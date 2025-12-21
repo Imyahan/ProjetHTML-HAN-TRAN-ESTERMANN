@@ -1,0 +1,147 @@
+[
+  {
+    "programme": "grandeEcole",
+    "couleur": "#163666",
+    "détailsProg": [
+      {
+        "formation1":"Prépa Intégré",
+        "descProg1":"Ce cycle en deux ans prépare nos étudiants en combinant formation scientifique et technique avec une formation générale et professionnelle de l’ingénieur."
+      },
+      {
+        "formation2":"Cycle ingénieur",
+        "descProg2":"Le cycle ingénieur, permet pendant au moins trois ans (quatre si réalisation d’un double-diplôme) à chaque étudiant, en accord avec ses projets personnels et professionnels, de choisir son parcours de formation parmi les 4 filières proposées par l’école (Information Technology, Sécurité et Réseaux, Data Science, Systèmes Embarqués)."
+      }
+    ],
+    "filières": [
+      {
+        "filière1":"Data Science",
+        "link1":"https://www.efrei.fr/formation/filiere-data-science/",
+        "majeures": [
+        {
+          "majeure1": "Data & IA",
+          "descMajeure1":"Cette majeure a pour objectif de former des ingénieurs capables de concevoir, piloter et déployer des solutions basées sur l’exploitation de données massives, dans le but de répondre aux enjeux stratégiques des organisations dans un contexte de transformation numérique profonde. Elle s’appuie sur un socle solide en mathématiques, en intelligence artificielle et en science des données, avec un accent particulier sur le Machine Learning, le Deep Learning et l’IA générative. La formation intègre également les dimensions éthiques et réglementaires, afin de préparer les étudiants à concevoir des systèmes d’IA robustes, explicables et responsables, adaptés à des environnements complexes et multidisciplinaires.",
+          "débouchés1":"Data Scientist, Machine Learning Expert, Computer Vision Engineer, Data Analyst, Chief Analytics Officer"
+        },
+        {
+          "majeure2": "Data Engineering",
+          "descMajeure2":"La production de données numériques croît de manière exponentielle, faisant de la data un enjeu clé du 21ᵉ siècle. Couplée à l’intelligence artificielle, elle révolutionne des secteurs comme la santé, la finance ou l’urbanisme. Les ingénieurs de données conçoivent et optimisent les architectures nécessaires à la collecte, au stockage, au traitement et à la sécurisation de ces masses de données.",
+          "débouchés2":"Data Engineer, Big Data Architect, DevOps Engineer, Data Analyst, Data Systems Administrator, Data Consultant"
+        },
+        {
+          "majeure3": "Bio & Numérique",
+          "descMajeure3":"La bio-informatique s’est largement développée ces dernières années pour traiter les données complexes issues des nouvelles biotechnologies, notamment les données multiomics. Cette discipline allie informatique, statistiques, biologie et médecine pour répondre à la massification et à la diversité des données à analyser.",
+          "débouchés3":"Bio-informaticien, Data Scientist / Computational Biologist, Ingénieur R&D / Bio-informatique, Data-manager Clinique, Ingénieur en génomique"  
+        },
+        {
+          "majeure4": "Business Intelligence & Analytics",
+          "descMajeure4":"La majeure Business Intelligence & Analytics forme des ingénieurs capables de concevoir et déployer les outils, méthodes et infrastructures nécessaires à la collecte, consolidation, modélisation, analyse et visualisation des données d’entreprise. Leur mission est de faciliter la collaboration et d’optimiser la prise de décision. La Business Intelligence vise à fournir aux décideurs une vision globale de l’activité, tout en anticipant les évolutions du marché et les tendances futures, pour piloter efficacement la stratégie d’entreprise.",
+          "débouchés4":"Data Specialist, Data Analyst, Business Analyst, Consultant/ ingénieur en BI/BA, Data Manager, BI/BA Project Manager, BI/BA Architect" 
+        }
+        ]
+      },
+      {
+        "filière2":"Information Technology",
+        "link2":"https://www.efrei.fr/formation/filiere-information-technology/",
+        "majeures": [
+        {
+          "majeure1": "Information Systems Stategy and Governance",
+          "descMajeure1":"Cette majeure forme des ingénieurs capables de piloter la transformation numérique des organisations en alignant stratégie, performance opérationnelle et systèmes d’information. Les étudiants y acquièrent des compétences en modélisation des processus métier, gestion des indicateurs de performance (y compris énergétiques), conception et gouvernance d’architectures Cloud, ainsi qu’en pilotage de la sécurité des SI. Une formation à l’interface du business et de la technologie, pour accompagner les entreprises dans la définition et la mise en œuvre de solutions numériques adaptées à leurs enjeux stratégiques et organisationnels.",
+          "débouchés1":"Concepteur-Développeur, Ingénieur DevOps, Développeur Full-stack, Consultant en systèmes d’information, Scrum Master, Ingénieur R&D"
+        },
+        {
+          "majeure2": "Software Engineering",
+          "descMajeure2":"Enseignée entièrement en anglais, cette majeure forme des ingénieurs logiciels de haut niveau capables de maîtriser l’ensemble du cycle de vie du logiciel, de la conception au déploiement. Généraliste et doté d’une solide culture informatique (développement, sécurité, qualité, cloud, data), l’ingénieur logiciel joue un rôle central dans la transformation digitale des organisations. Polyvalents et recherchés, ces profils trouvent leur place dans tous les secteurs : automobile, aéronautique, défense, finance, télécommunications et bien d’autres.",
+          "débouchés2":"Concepteur-Développeur, Ingénieur DevOps, Développeur Full-stack, Consultant en systèmes d’information, Scrum Master, Ingénieur R&D"
+        },
+        {
+          "majeure3": "IT for Finance",
+          "descMajeure3":"Entièrement dispensée en anglais, cette majeure forme des ingénieurs capables de concevoir des solutions numériques pour les marchés financiers internationaux. Les étudiants y acquièrent une double compétence en informatique et en finance : modélisation mathématique des marchés, analyse des risques et transactions, conception d’infrastructures financières et compréhension des mécanismes de la banque d’investissement. Une attention particulière est portée aux opérations de trading et au développement de solutions durables et éthiques pour accompagner l’évolution du secteur.",
+          "débouchés3":"Développeur en banque d’investissement, Analyste quantitatif, Trader Algorithmique, Assistant Trader, Commando, Manager risques / conformité des gestionnaires d’actifs, Spécialiste infrastructure en banking, Spécialiste des cryptomonnaies"  
+        },
+        {
+          "majeure4": "Technologies immersives et IA",
+          "descMajeure4":"Ingénieur en 3D pour la simulation numérique, Ingénieur en réalité virtuelle et réalité augmentée, Ingénieur en vision par ordinateur et IA, Ingénieur Jeux vidéo",
+          "débouchés4":"Cette majeure forme des ingénieurs experts en conception de systèmes interactifs avancés, à la croisée de l’intelligence artificielle et de la réalité étendue (XR). Elle couvre les technologies immersives — réalité virtuelle, augmentée et mixte — et leurs applications dans des domaines variés : simulation industrielle, architecture, visualisation de données, santé, jeux vidéo ou encore valorisation du patrimoine culturel. Les étudiants y acquièrent des compétences pointues en modélisation numérique, rendus interactifs et conception 3D, pour devenir acteurs de l’innovation dans un secteur en plein essor." 
+        }
+        ]
+      },
+      {
+        "filière3":"Sécurité & Réseaux",
+        "link3":"https://www.efrei.fr/formation/filiere-securite-et-reseaux/",
+        "majeures": [
+        {
+          "majeure1": "Cybersécurité, SI & Gouvernance",
+          "descMajeure1":"La majeure Cybersécurité, SI & Gouvernance forme des ingénieurs capables de maîtriser à la fois les dimensions techniques, fonctionnelles et réglementaires de la cybersécurité. Nos étudiants y développent une expertise dans la gestion des risques, la protection des systèmes d’information et la mise en place de politiques de gouvernance adaptées.",
+          "débouchés1":"Expert en Sécurité des SI, Responsable Sécurité des SI (RSSI), Analyste / consultant en sécurité, Architecte en cybersécurité"
+        },
+        {
+          "majeure2": "Cybersécurité, infrastructures et logiciels",
+          "descMajeure2":"Cette majeure forme des ingénieurs experts dans la protection des systèmes et des applications. Elle aborde les enjeux essentiels de la cybersécurité : sécurisation des infrastructures, protection des données sensibles, continuité des services critiques et confiance dans l’économie numérique.",
+          "débouchés2":"Expert en test d’intrusion, Post auditeur (Forensic criminaliste, Analyse de compromission), Développeur en cybersécurité, Architecte en cybersécurité, Ingénieur conseil en cybersécurité"
+        },
+        {
+          "majeure3": "Cybersécurité & Cloud",
+          "descMajeure3":"La majeure Cybersécurité & Cloud forme des ingénieurs capables d’appréhender de manière globale les enjeux de sécurité au sein d’une organisation. Les étudiants y acquièrent des compétences pointues en protection des données, en sécurisation des infrastructures IT et en conception d’architectures cloud de confiance. Une expertise clé pour accompagner la transformation numérique des organisations en toute sécurité.",
+          "débouchés3":"Architecte de sécurité Cloud, Analyste/consultant en sécurité, Ingénieur DevSecOps, Auditeur sécurité, Ingénieur R&D en Cybersécurité/Cloud"  
+        }
+        ]
+      },
+      {
+        "filière4":"Systèmes Embarqués",
+        "link4":"https://www.efrei.fr/formation/filiere-systemes-embarques/",
+        "majeures": [
+        {
+          "majeure1": "Transports intelligents",
+          "descMajeure1":"Cette majeure forme des ingénieurs spécialisés dans la conception et le développement de systèmes embarqués pour les transports autonomes : véhicules, aéronefs, drones ou trains. Les étudiants y acquièrent des compétences en systèmes temps réel, traitement du signal, intelligence artificielle embarquée, réseaux de communication et sûreté des systèmes critiques. Une expertise clé pour imaginer des solutions innovantes, sûres et durables, répondant aux défis de la transition écologique dans les secteurs automobile, aéronautique, ferroviaire et spatial.",
+          "débouchés1":"Ingénieur en Conception des Systèmes Embarqués, Ingénieur en Développement Logiciels Embarqués, Ingénieur en Intelligence Artificielle Embarquée, Ingénieur en ADAS et Système Autonomes, Ingénieur en Développement Embarqué Avionique FMS, Ingénieur en Sécurité des Systèmes Embarqués"
+        },
+        {
+          "majeure2": "Systèmes robotiques et drones",
+          "descMajeure2":"Cette majeure forme des ingénieurs capables d’étudier et de concevoir des systèmes autonomes avec une intelligence embarquée : des automates pouvant se mouvoir au sol et permettant d’apporter une aide à l’humain sous différentes formes ainsi que la conception d’objets volants. Un programme qui vous propulse rapidement dans votre future carrière dans les services informatiques",
+          "débouchés2":"Ingénieur contrôle et commande, Ingénieur robotique, Ingénieur conception et simulation électronique, Ingénieur vision robotique, Ingénieur développement systèmes embarqués"
+        }
+      ]
+      }
+    ]
+  },
+  {
+    "programme": "technoNum",
+    "couleur": "#38B6FF",
+    "détailsProg": [
+      {
+        "formation1":"BTS SIO",
+        "descProg1":"Le BTS Services Informatiques aux Organisations (SIO) est une formation de 2 ans pour devenir professionnel de l’informatique. Il aborde le développement, la gestion de réseaux et la sécurité informatique et permet de nombreuses opportunités de carrière dans le domaine de l’IT."
+      },
+      {
+        "formation2":"Bachelor",
+        "descProg2":"Le Bachelor Informatique, diplôme de grade licence, est construit sur un solide socle scientifique qui permet aux étudiants de maîtriser les technologies de pointe en programmation et de développer des applications performantes."
+      }
+    ],
+    "filières": [
+      {
+        "majeure1":"Dev. Manager Full Stack ",
+        "link1":"https://www.efrei.fr/formation/mastere-dev-manager-full-stack/",
+        "descMajeure1":"Une formation complète et équilibrée qui prépare à devenir un professionnel du développement logiciel. Le Mastère Dev Manager Fullstack combine à la fois les compétences techniques avancées en développement et en gestion de projets, notamment avec les méthodes Agiles telles que Kanban. L’approche DevOps, les modules dédiés à l’IA ou encore la sensibilisation au TDD permettront aux futurs experts de se démarquer et de s’intégrer dans tout type de structures.",
+        "débouchés1": "Responsable informatique, Consultant IT, Responsable des systèmes d’information, Expert en cybersécurité, Chef de projet informatique"
+      },
+      {
+        "majeure2":"Data engineering & IA",
+        "link2":"https://www.efrei.fr/formation/mastere-data-engineering-ia/",
+        "descMajeure2":"Le Mastère Data Engineering & AI forme des experts capables de comprendre et de maîtriser les technologies associées à la gestion de données, à l’IA et au Cloud. Les futurs diplômés seront ainsi capables d’analyser et de développer une solution permettant le traitement de volumes importants de données, tout en garantissant la sécurité de celles-ci dans le Cloud.",
+        "débouchés2":"DataEngineer, Data Analyst, Consultant Data & IA, Architecte Data sur le Cloud"
+      },
+      {
+        "majeure3":"Cybersécurité",
+        "link3":"https://www.efrei.fr/mastere-cybersecurite/",
+        "descMajeure3":"Le Mastère Cybersécurité forme des experts capables de mobiliser les dernières avancées en Intelligence Artificielle au service de la fonction cyber. Le programme allie compétences techniques, stratégiques et managériales pour relever les défis actuels et futurs de la cybersécurité.",
+        "débouchés3":"Responsable informatique, Consultant en Cybersécurité, Consultant Cyberdéfense, Consultant informatique"
+      },
+      {
+        "majeure4":"Cybersécurité & Management",
+        "link4":"https://www.efrei.fr/mastere-cybersecurite-management/",
+        "descMajeure4":"Grâce à ses enseignements pluridisciplinaires reposant sur des compétences d’ordre à la fois managériales et d’ingénieries, le Mastère Cybersécurité & Management est un cursus innovant qui forme des cadres capables de répondre aux problématiques stratégiques de la cybersécurité.",
+        "débouchés4":"Responsable informatique, Consultant IT, Responsable des systèmes d’information, Expert en cybersécurité, Chef de projet informatique" 
+      }
+    ]
+  }
+]

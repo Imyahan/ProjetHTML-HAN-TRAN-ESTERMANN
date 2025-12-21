@@ -1,21 +1,46 @@
 [
   {
+    "programme": "grandeEcole",
+    "couleur": "#163666",
     "projets": [
       {
         "projet1": {
-          "titre": "CyberShield AI",
-          "image": "../../img/projets/cyberThreatDetection.jpeg",
-          "texte": "Système de détection d’attaques en temps réel basé sur l’IA pour réseaux d’entreprise."
+          "titre": "Application de suivi de santé connectée",
+          "image": "../../img/projets/sante.png",
+          "texte": "Développement d'une application mobile qui collecte et analyse les données de santé (fréquence cardiaque, sommeil, activité physique) pour fournir des recommandations personnalisées."
         },
         "projet2": {
-          "titre": "SecureMind",
-          "image": "../../img/projets/cyberTraining.png",
-          "texte": "Programme de sensibilisation et formation interactive à la cybersécurité pour les employés."
+          "titre": "Chatbot intelligent pour le support client",
+          "image": "../../img/projets/chatbot.jpg",
+          "texte": "Création d'un chatbot capable de comprendre le langage naturel et de fournir des réponses pertinentes aux questions fréquentes des utilisateurs d'une entreprise."
         },
         "projet3": {
-          "titre": "CryptoVault",
-          "image": "../../img/projets/cyberCrypto.jpg",
-          "texte": "Plateforme de cryptographie avancée pour sécuriser les données sensibles dans le cloud et sur site."
+          "titre": "Jeu vidéo éducatif en ligne",
+          "image": "../../img/projets/jeuEdu.jpg",
+          "texte": "Conception d'un jeu vidéo interactif en ligne visant à enseigner des notions de programmation et de logique aux jeunes utilisateurs."
+        }
+      }
+    ]
+  },
+  {
+    "programme": "technoNum",
+    "couleur": "#38B6FF",
+    "projets": [
+      {
+        "projet1": {
+          "titre": "Analyse prédictive des tendances boursières",
+          "image": "../../img/projets/bourse.jpg",
+          "texte": "Développement d'un modèle d'apprentissage automatique capable de prédire les tendances du marché boursier à partir de données historiques et d'actualités financières."
+        },
+        "projet2": {
+          "titre": "Plateforme de réalité augmentée pour l'éducation",
+          "image": "../../img/projets/raEducation.jpg",
+          "texte": "Création d'une application mobile en réalité augmentée pour visualiser des concepts scientifiques et mathématiques complexes de manière interactive."
+        },
+        "projet3": {
+          "titre": "Système de détection de fraudes en ligne",
+          "image": "../../img/projets/fraude.webp",
+          "texte": "Mise en place d'un outil d'analyse des transactions e-commerce utilisant l'intelligence artificielle pour détecter les comportements suspects et prévenir la fraude."
         }
       }
     ]
